@@ -51,6 +51,7 @@ main{max-width:1100px;margin:18px auto 60px;padding:0 16px;display:grid;grid-tem
 .plate code{font-family:'IBM Plex Mono',monospace;font-size:13px;color:#fff;letter-spacing:.04em;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .plate button{border:1px solid var(--hazard);background:transparent;color:var(--hazard);font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:.1em;text-transform:uppercase;border-radius:4px;padding:3px 8px;cursor:pointer}
 .plate button:hover{background:var(--hazard);color:var(--asphalt)}
+.plate code.vintog{cursor:pointer}
 .notes{font-size:13px;color:var(--mute);line-height:1.45}
 .empty{grid-column:1/-1;text-align:center;padding:70px 20px;color:var(--mute);font-size:15px}
 footer{background:var(--asphalt);color:#8b929a;text-align:center;padding:18px;font-size:12px;letter-spacing:.06em}
@@ -79,6 +80,7 @@ function cleanVin(v){return String(v||'').replace(/[^A-Za-z0-9]/g,'').toUpperCas
 
 function card(t,idx){
   var vin=cleanVin(t.vin);
+  var vin8=vin.length>8?vin.slice(-8):vin;
   var ymm='<span class="yr">'+esc(t.year||'')+'</span>'+esc(t.make||'');
   var leased=(t.leased===true||t.leased==='true');
   return '<article class="card'+(leased?' leased':'')+'" data-leased="'+(leased?'1':'0')+'" data-hay="'+esc(((t.year||'')+' '+(t.make||'')+' '+(t.model||'')+' '+(t.state||'')+' '+(t.miles||'')+' '+vin).toLowerCase())+'">'
@@ -89,7 +91,7 @@ function card(t,idx){
     +'<div class="body">'
       +'<div>'+(t.state?'<div class="loc">'+esc(t.state)+'</div>':'')+'<div class="ymm">'+ymm+'</div>'+(t.model?'<div class="model">'+esc(t.model)+'</div>':'')+(t.miles?'<div class="miles"><b>'+esc(Number(String(t.miles).replace(/[^0-9]/g,''))?Number(String(t.miles).replace(/[^0-9]/g,'')).toLocaleString():t.miles)+'</b> MILES</div>':'')+'</div>'
       +(t.notes?'<div class="notes">'+esc(t.notes)+'</div>':'')
-      +'<div class="plate"><span class="lbl">VIN</span><code>'+esc(vin)+'</code><button type="button" onclick="copyVin(this,\''+esc(vin)+'\')">Copy</button></div>'
+      +'<div class="plate"><span class="lbl">VIN</span><code class="vintog" data-full="'+esc(vin)+'" data-short="'+esc(vin8)+'" title="Tap to show full VIN" onclick="togVin(this)">'+esc(vin8)+'</code><button type="button" onclick="copyVin(this,\''+esc(vin)+'\')">Copy</button></div>'
     +'</div></article>';
 }
 
@@ -97,6 +99,12 @@ function copyVin(btn,vin){
   function done(ok){btn.textContent=ok?'Copied':'Copy failed';setTimeout(function(){btn.textContent='Copy';},1400);}
   if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(vin).then(function(){done(true);},function(){done(false);});}
   else done(false);
+}
+
+function togVin(el){
+  var on=el.getAttribute('data-on')==='1';
+  el.textContent=on?el.getAttribute('data-short'):el.getAttribute('data-full');
+  el.setAttribute('data-on',on?'0':'1');
 }
 
 function loadPhotos(t,idx){
