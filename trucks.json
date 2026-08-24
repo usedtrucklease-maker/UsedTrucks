@@ -5,6 +5,8 @@
     "make": "Freightliner",
     "model": "",
     "state": "Kentucky",
+    "miles": "122724",
+    "leased": false,
     "notes": ""
   },
   {
@@ -13,6 +15,8 @@
     "make": "Hino",
     "model": "",
     "state": "Florida",
+    "miles": "200555",
+    "leased": false,
     "notes": ""
   },
   {
@@ -21,6 +25,8 @@
     "make": "Hino",
     "model": "",
     "state": "Alabama",
+    "miles": "193399",
+    "leased": false,
     "notes": ""
   },
   {
@@ -29,6 +35,8 @@
     "make": "Hino",
     "model": "",
     "state": "South Carolina",
+    "miles": "93106",
+    "leased": false,
     "notes": ""
   },
   {
@@ -37,14 +45,8 @@
     "make": "Hino",
     "model": "",
     "state": "Pennslyvania",
-    "notes": ""
-  },
-  {
-    "vin": "5PVNJ7AN5R5T50701",
-    "year": 2024,
-    "make": "Hino",
-    "model": "",
-    "state": "Michigan",
+    "miles": "103834",
+    "leased": false,
     "notes": ""
   },
   {
@@ -53,6 +55,8 @@
     "make": "Hino",
     "model": "",
     "state": "Texas",
+    "miles": "55436",
+    "leased": false,
     "notes": ""
   },
   {
@@ -61,6 +65,8 @@
     "make": "Hino",
     "model": "",
     "state": "Texas",
+    "miles": "122920",
+    "leased": false,
     "notes": ""
   },
   {
@@ -69,6 +75,8 @@
     "make": "Hino",
     "model": "",
     "state": "South Carolina",
+    "miles": "141323",
+    "leased": false,
     "notes": ""
   },
   {
@@ -77,6 +85,8 @@
     "make": "Hino",
     "model": "",
     "state": "Wisconsin",
+    "miles": "160598",
+    "leased": false,
     "notes": ""
   },
   {
@@ -85,6 +95,8 @@
     "make": "Hino",
     "model": "",
     "state": "Missouri",
+    "miles": "118236",
+    "leased": false,
     "notes": ""
   },
   {
@@ -93,6 +105,8 @@
     "make": "Hino",
     "model": "",
     "state": "Columbus, OH",
+    "miles": "73209",
+    "leased": false,
     "notes": ""
   },
   {
@@ -101,6 +115,8 @@
     "make": "Hino",
     "model": "",
     "state": "Florida",
+    "miles": "97843",
+    "leased": false,
     "notes": ""
   },
   {
@@ -109,6 +125,8 @@
     "make": "Hino",
     "model": "",
     "state": "Delaware",
+    "miles": "134230",
+    "leased": false,
     "notes": ""
   },
   {
@@ -117,6 +135,8 @@
     "make": "Hino",
     "model": "",
     "state": "",
+    "miles": "65175",
+    "leased": false,
     "notes": ""
   },
   {
@@ -125,14 +145,8 @@
     "make": "Hino",
     "model": "",
     "state": "California",
-    "notes": ""
-  },
-  {
-    "vin": "5PVNJ7BS1R5T50361",
-    "year": 2024,
-    "make": "Hino",
-    "model": "",
-    "state": "Antelope, CA",
+    "miles": "70950",
+    "leased": false,
     "notes": ""
   },
   {
@@ -141,22 +155,8 @@
     "make": "Hino",
     "model": "",
     "state": "New Mexico",
-    "notes": ""
-  },
-  {
-    "vin": "5PVNJ7BT4S5T50305",
-    "year": 2025,
-    "make": "Hino",
-    "model": "",
-    "state": "New Mexico",
-    "notes": ""
-  },
-  {
-    "vin": "5PVNJ7BT4S5T50305",
-    "year": 2025,
-    "make": "Hino",
-    "model": "",
-    "state": "New Mexico",
+    "miles": "70390",
+    "leased": false,
     "notes": ""
   },
   {
@@ -165,6 +165,8 @@
     "make": "Hino",
     "model": "",
     "state": "New York ",
+    "miles": "233679",
+    "leased": false,
     "notes": ""
   },
   {
@@ -173,14 +175,8 @@
     "make": "International",
     "model": "",
     "state": "Chehalis, WA",
-    "notes": ""
-  },
-  {
-    "vin": "1HTEUMML0PS649143",
-    "year": 2023,
-    "make": "International",
-    "model": "",
-    "state": "Eugene, OR",
+    "miles": "146477",
+    "leased": false,
     "notes": ""
   },
   {
@@ -189,22 +185,8 @@
     "make": "International",
     "model": "",
     "state": "Illinois",
-    "notes": ""
-  },
-  {
-    "vin": "3HAEUMML0PL532850",
-    "year": 2023,
-    "make": "International",
-    "model": "",
-    "state": "Kentucky",
-    "notes": ""
-  },
-  {
-    "vin": "3HAEUMML0PL532850",
-    "year": 2023,
-    "make": "International",
-    "model": "",
-    "state": "Nancy, KY",
+    "miles": "141029",
+    "leased": false,
     "notes": ""
   },
   {
@@ -213,14 +195,8 @@
     "make": "International",
     "model": "",
     "state": "Georgia",
-    "notes": ""
-  },
-  {
-    "vin": "3HAEUMML1PL562441",
-    "year": 2023,
-    "make": "International",
-    "model": "",
-    "state": "Warner Robins, GA",
+    "miles": "179943",
+    "leased": false,
     "notes": ""
   },
   {
@@ -229,14 +205,8 @@
     "make": "International",
     "model": "",
     "state": "St.Cloud, MN  ",
-    "notes": ""
-  },
-  {
-    "vin": "3HAEUMML2PL514334",
-    "year": 2023,
-    "make": "International",
-    "model": "",
-    "state": "Ham Lake, MN",
+    "miles": "128835",
+    "leased": false,
     "notes": ""
   },
   {
@@ -245,14 +215,8 @@
     "make": "International",
     "model": "",
     "state": "Bronx, NY",
-    "notes": ""
-  },
-  {
-    "vin": "3HAEUMML2PL536270",
-    "year": 2023,
-    "make": "International",
-    "model": "",
-    "state": "New York",
+    "miles": "237257",
+    "leased": false,
     "notes": ""
   },
   {
@@ -261,6 +225,8 @@
     "make": "International",
     "model": "",
     "state": "Texas",
+    "miles": "205793",
+    "leased": false,
     "notes": ""
   },
   {
@@ -269,22 +235,8 @@
     "make": "International",
     "model": "",
     "state": "Missouri",
-    "notes": ""
-  },
-  {
-    "vin": "3HAEUMML4PL568556",
-    "year": 2023,
-    "make": "International",
-    "model": "",
-    "state": "Indianapolis, IN ",
-    "notes": ""
-  },
-  {
-    "vin": "3HAEUMML4PL568556",
-    "year": 2023,
-    "make": "International",
-    "model": "",
-    "state": "Kentucky",
+    "miles": "170549",
+    "leased": false,
     "notes": ""
   },
   {
@@ -293,6 +245,8 @@
     "make": "International",
     "model": "",
     "state": "Greer, SC",
+    "miles": "178926",
+    "leased": false,
     "notes": ""
   },
   {
@@ -301,22 +255,8 @@
     "make": "International",
     "model": "",
     "state": "Gastonia, NC",
-    "notes": ""
-  },
-  {
-    "vin": "3HAEUMML5PL567951",
-    "year": 2023,
-    "make": "International",
-    "model": "",
-    "state": "Gastonia, NC",
-    "notes": ""
-  },
-  {
-    "vin": "3HAEUMML5PL567951",
-    "year": 2023,
-    "make": "International",
-    "model": "",
-    "state": "Kinston, NC",
+    "miles": "229710",
+    "leased": false,
     "notes": ""
   },
   {
@@ -325,6 +265,8 @@
     "make": "International",
     "model": "",
     "state": "Washington",
+    "miles": "157961",
+    "leased": false,
     "notes": ""
   },
   {
@@ -333,14 +275,8 @@
     "make": "International",
     "model": "",
     "state": "Washington",
-    "notes": ""
-  },
-  {
-    "vin": "3HAEUMML6RL613788",
-    "year": 2024,
-    "make": "International",
-    "model": "",
-    "state": "Burien, WA",
+    "miles": "130149",
+    "leased": false,
     "notes": ""
   },
   {
@@ -349,22 +285,8 @@
     "make": "International",
     "model": "",
     "state": "Arlington, WA",
-    "notes": ""
-  },
-  {
-    "vin": "3HAEUMML7PL529508",
-    "year": 2023,
-    "make": "International",
-    "model": "",
-    "state": "Washington",
-    "notes": ""
-  },
-  {
-    "vin": "3HAEUMML7PL529508",
-    "year": 2023,
-    "make": "International",
-    "model": "",
-    "state": "Chehalis, WA",
+    "miles": "141585",
+    "leased": false,
     "notes": ""
   },
   {
@@ -373,6 +295,8 @@
     "make": "International",
     "model": "",
     "state": "Lousiania",
+    "miles": "229760",
+    "leased": false,
     "notes": ""
   },
   {
@@ -381,14 +305,8 @@
     "make": "International",
     "model": "",
     "state": "Utah",
-    "notes": ""
-  },
-  {
-    "vin": "3HAEUMML8PL567166",
-    "year": 2023,
-    "make": "International",
-    "model": "",
-    "state": "Riverton, UT",
+    "miles": "122508",
+    "leased": false,
     "notes": ""
   },
   {
@@ -397,6 +315,8 @@
     "make": "International",
     "model": "",
     "state": "Tennesse",
+    "miles": "168269",
+    "leased": false,
     "notes": ""
   },
   {
@@ -405,14 +325,8 @@
     "make": "International",
     "model": "",
     "state": "Dexter, OR",
-    "notes": ""
-  },
-  {
-    "vin": "3HAEUMML9PL522320",
-    "year": 2023,
-    "make": "International",
-    "model": "",
-    "state": "Harrisburg, OR",
+    "miles": "106698",
+    "leased": false,
     "notes": ""
   },
   {
@@ -421,6 +335,8 @@
     "make": "International",
     "model": "",
     "state": "Mississippi",
+    "miles": "221991",
+    "leased": false,
     "notes": ""
   },
   {
@@ -429,6 +345,8 @@
     "make": "International",
     "model": "",
     "state": "Waynesboro, MS",
+    "miles": "276888",
+    "leased": false,
     "notes": ""
   },
   {
@@ -437,6 +355,8 @@
     "make": "International",
     "model": "",
     "state": "Colorado",
+    "miles": "210813",
+    "leased": false,
     "notes": ""
   },
   {
@@ -445,6 +365,8 @@
     "make": "Kenworth",
     "model": "",
     "state": "Texas",
+    "miles": "8210",
+    "leased": false,
     "notes": ""
   },
   {
@@ -453,22 +375,8 @@
     "make": "Kenworth",
     "model": "",
     "state": "Alabama",
-    "notes": ""
-  },
-  {
-    "vin": "2NKHHM6X2NM149090",
-    "year": 2022,
-    "make": "Kenworth",
-    "model": "",
-    "state": "Michigan",
-    "notes": ""
-  },
-  {
-    "vin": "2NKHHM6X2NM149090",
-    "year": 2022,
-    "make": "Kenworth",
-    "model": "",
-    "state": "Stow, OH ",
+    "miles": "108002",
+    "leased": false,
     "notes": ""
   },
   {
@@ -477,6 +385,8 @@
     "make": "Kenworth",
     "model": "",
     "state": "Oklahoma",
+    "miles": "245198",
+    "leased": false,
     "notes": ""
   },
   {
@@ -485,6 +395,8 @@
     "make": "Kenworth",
     "model": "",
     "state": "Alabama",
+    "miles": "147475",
+    "leased": false,
     "notes": ""
   },
   {
@@ -493,6 +405,8 @@
     "make": "Kenworth",
     "model": "",
     "state": "Arizona",
+    "miles": "202050",
+    "leased": false,
     "notes": ""
   },
   {
@@ -501,14 +415,8 @@
     "make": "Mack",
     "model": "",
     "state": "Minnesota",
-    "notes": ""
-  },
-  {
-    "vin": "1M2MDBAA4RS014781",
-    "year": 2024,
-    "make": "Mack",
-    "model": "",
-    "state": "South Dakota",
+    "miles": "140399",
+    "leased": false,
     "notes": ""
   },
   {
@@ -517,14 +425,8 @@
     "make": "Mack",
     "model": "",
     "state": "California",
-    "notes": ""
-  },
-  {
-    "vin": "1M2MDBAAXRS011836",
-    "year": 2024,
-    "make": "Mack",
-    "model": "",
-    "state": "Arizona",
+    "miles": "130185",
+    "leased": false,
     "notes": ""
   }
 ]
