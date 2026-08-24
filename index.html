@@ -107,7 +107,12 @@ function loadPhotos(t,idx){
     if(n>MAXPH){render();return;}
     var im=new Image();
     im.onload=function(){imgs[n]=im.src;render();probe(n+1);};
-    im.onerror=function(){render();};
+    im.onerror=function(){
+      var im2=new Image();
+      im2.onload=function(){imgs[n]=im2.src;render();probe(n+1);};
+      im2.onerror=function(){render();};
+      im2.src='photos/'+vin+'-'+n+'.jpeg';
+    };
     im.src='photos/'+vin+'-'+n+'.jpg';
   }
   probe(1);
