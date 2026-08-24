@@ -25,7 +25,10 @@ h1 small{display:block;font-size:12px;letter-spacing:.28em;color:var(--hazard);f
 .search{width:100%;max-width:420px;background:#fff;border:2px solid var(--steel);border-radius:6px;padding:10px 12px;font-size:15px;font-family:inherit}
 .search:focus{outline:none;border-color:var(--hazard)}
 main{max-width:1100px;margin:18px auto 60px;padding:0 16px;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px}
-.card{background:#fff;border:1px solid #d8dad5;border-radius:8px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 1px 3px rgba(23,26,30,.08)}
+.card{position:relative;background:#fff;border:1px solid #d8dad5;border-radius:8px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 1px 3px rgba(23,26,30,.08)}
+.card.leased .ph img{filter:grayscale(1) brightness(.8)}
+.card.leased .ymm,.card.leased .model,.card.leased .loc{opacity:.55}
+.rib{position:absolute;top:14px;right:-34px;transform:rotate(38deg);background:repeating-linear-gradient(-45deg,var(--hazard) 0 10px,var(--asphalt) 10px 20px);color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;letter-spacing:.22em;text-transform:uppercase;padding:5px 44px;z-index:3;text-shadow:0 1px 3px rgba(0,0,0,.65);pointer-events:none}
 .ph{position:relative;aspect-ratio:4/3;background:var(--steel);overflow:hidden}
 .ph img{width:100%;height:100%;object-fit:cover;display:block}
 .ph .none{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#7b828a;font-family:'Barlow Condensed',sans-serif;letter-spacing:.12em;text-transform:uppercase;font-size:13px;gap:8px}
@@ -58,7 +61,7 @@ button:focus-visible,.search:focus-visible{outline:3px solid var(--hazard);outli
 <header>
   <div class="hd-inner">
     <h1>Available Trucks</h1>
-    <div class="count"><b id="n">0</b>ready to assign</div>
+    <div class="count"><b id="n">0</b></div>
   </div>
   <div class="bar"><input class="search" id="q" type="search" placeholder="Search state, year, make, model or VIN&hellip;" aria-label="Search trucks"></div>
 </header>
@@ -75,7 +78,9 @@ function cleanVin(v){return String(v||'').replace(/[^A-Za-z0-9]/g,'').toUpperCas
 function card(t,idx){
   var vin=cleanVin(t.vin);
   var ymm='<span class="yr">'+esc(t.year||'')+'</span>'+esc(t.make||'');
-  return '<article class="card" data-hay="'+esc(((t.year||'')+' '+(t.make||'')+' '+(t.model||'')+' '+(t.state||'')+' '+vin).toLowerCase())+'">'
+  var leased=(t.leased===true||t.leased==='true');
+  return '<article class="card'+(leased?' leased':'')+'" data-leased="'+(leased?'1':'0')+'" data-hay="'+esc(((t.year||'')+' '+(t.make||'')+' '+(t.model||'')+' '+(t.state||'')+' '+vin).toLowerCase())+'">'
+    +(leased?'<div class="rib">Leased</div>':'')
     +'<div class="ph" id="ph'+idx+'">'
       +'<div class="none"><svg viewBox="0 0 64 40" fill="none"><path d="M2 30h8l6-14h20v14h10l6-8h8v8h2" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><circle cx="18" cy="32" r="5" stroke="currentColor" stroke-width="2.5"/><circle cx="48" cy="32" r="5" stroke="currentColor" stroke-width="2.5"/></svg>Photos coming soon</div>'
     +'</div>'
@@ -129,7 +134,8 @@ function applySearch(){
   var shown=0;
   document.querySelectorAll('#grid .card').forEach(function(c){
     var ok=!q||c.getAttribute('data-hay').indexOf(q)>=0;
-    c.style.display=ok?'':'none';if(ok)shown++;
+    c.style.display=ok?'':'none';
+    if(ok&&c.getAttribute('data-leased')!=='1')shown++;
   });
   document.getElementById('n').textContent=shown;
 }
@@ -138,8 +144,9 @@ fetch('trucks.json?v='+Date.now()).then(function(r){return r.json();}).then(func
   trucks=Array.isArray(data)?data:[];
   var g=document.getElementById('grid');
   if(!trucks.length){g.innerHTML='<div class="empty">No trucks listed right now &mdash; check back soon.</div>';document.getElementById('n').textContent=0;return;}
+  trucks.sort(function(a,b){return (a.leased===true?1:0)-(b.leased===true?1:0);});
   g.innerHTML=trucks.map(function(t,i){return card(t,i);}).join('');
-  document.getElementById('n').textContent=trucks.length;
+  document.getElementById('n').textContent=trucks.filter(function(t){return t.leased!==true&&t.leased!=='true';}).length;
   trucks.forEach(function(t,i){loadPhotos(t,i);});
 }).catch(function(){
   document.getElementById('grid').innerHTML='<div class="empty">Could not load trucks.json &mdash; make sure it sits next to this page.</div>';
