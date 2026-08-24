@@ -44,6 +44,8 @@ main{max-width:1100px;margin:18px auto 60px;padding:0 16px;display:grid;grid-tem
 .loc{display:inline-flex;align-items:center;gap:6px;font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--mute);margin-bottom:4px}
 .loc::before{content:'';width:8px;height:8px;background:var(--hazard);display:inline-block}
 .model{font-size:14px;color:var(--mute);font-weight:500;margin-top:2px;text-transform:none;font-family:'Barlow',sans-serif;letter-spacing:0}
+.miles{font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:600;letter-spacing:.08em;color:var(--steel);margin-top:3px}
+.miles b{color:var(--hazard-dk)}
 .plate{margin-top:auto;display:flex;align-items:center;gap:8px;background:var(--asphalt);border-radius:5px;padding:7px 10px}
 .plate .lbl{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:.22em;color:var(--hazard);text-transform:uppercase}
 .plate code{font-family:'IBM Plex Mono',monospace;font-size:13px;color:#fff;letter-spacing:.04em;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -79,13 +81,13 @@ function card(t,idx){
   var vin=cleanVin(t.vin);
   var ymm='<span class="yr">'+esc(t.year||'')+'</span>'+esc(t.make||'');
   var leased=(t.leased===true||t.leased==='true');
-  return '<article class="card'+(leased?' leased':'')+'" data-leased="'+(leased?'1':'0')+'" data-hay="'+esc(((t.year||'')+' '+(t.make||'')+' '+(t.model||'')+' '+(t.state||'')+' '+vin).toLowerCase())+'">'
+  return '<article class="card'+(leased?' leased':'')+'" data-leased="'+(leased?'1':'0')+'" data-hay="'+esc(((t.year||'')+' '+(t.make||'')+' '+(t.model||'')+' '+(t.state||'')+' '+(t.miles||'')+' '+vin).toLowerCase())+'">'
     +(leased?'<div class="rib">Leased</div>':'')
     +'<div class="ph" id="ph'+idx+'">'
       +'<div class="none"><svg viewBox="0 0 64 40" fill="none"><path d="M2 30h8l6-14h20v14h10l6-8h8v8h2" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><circle cx="18" cy="32" r="5" stroke="currentColor" stroke-width="2.5"/><circle cx="48" cy="32" r="5" stroke="currentColor" stroke-width="2.5"/></svg>Photos coming soon</div>'
     +'</div>'
     +'<div class="body">'
-      +'<div>'+(t.state?'<div class="loc">'+esc(t.state)+'</div>':'')+'<div class="ymm">'+ymm+'</div>'+(t.model?'<div class="model">'+esc(t.model)+'</div>':'')+'</div>'
+      +'<div>'+(t.state?'<div class="loc">'+esc(t.state)+'</div>':'')+'<div class="ymm">'+ymm+'</div>'+(t.model?'<div class="model">'+esc(t.model)+'</div>':'')+(t.miles?'<div class="miles"><b>'+esc(Number(String(t.miles).replace(/[^0-9]/g,''))?Number(String(t.miles).replace(/[^0-9]/g,'')).toLocaleString():t.miles)+'</b> MILES</div>':'')+'</div>'
       +(t.notes?'<div class="notes">'+esc(t.notes)+'</div>':'')
       +'<div class="plate"><span class="lbl">VIN</span><code>'+esc(vin)+'</code><button type="button" onclick="copyVin(this,\''+esc(vin)+'\')">Copy</button></div>'
     +'</div></article>';
@@ -99,41 +101,41 @@ function copyVin(btn,vin){
 
 function loadPhotos(t,idx){
   var vin=cleanVin(t.vin);
-  // Photos must be named VIN-1.jpg, VIN-2.jpg ... consecutively (.jpg only).
-  // Probing stops at the first missing number, so a truck with no photos
-  // costs one request and a truck with 3 photos costs four.
+  // Photos: VIN-1.jpg / .jpeg, numbered consecutively; probing stops at the first gap.
   var imgs=[];
+  function render(){
+    var host=document.getElementById('ph'+idx);
+    if(!host||!imgs.length)return;
+    var cur=host._cur||0; if(cur<0||cur>=imgs.length)cur=0; host._cur=cur;
+    var dots=imgs.length>1?('<div class="nav">'+imgs.map(function(_,k){return '<button type="button" class="'+(k===cur?'on':'')+'" aria-label="Photo '+(k+1)+'" data-ph="'+idx+'" data-k="'+k+'"></button>';}).join('')+'</div>'):'';
+    var arrows=imgs.length>1?('<button type="button" class="arrow l" aria-label="Previous photo" data-ph="'+idx+'" data-step="-1"></button><button type="button" class="arrow r" aria-label="Next photo" data-ph="'+idx+'" data-step="1"></button>'):'';
+    host._n=imgs.length;
+    host._render=render;
+    host.innerHTML='<img src="'+imgs[cur]+'" alt="Truck photo">'+arrows+dots;
+  }
   function probe(n){
     if(n>MAXPH){render();return;}
     var im=new Image();
-    im.onload=function(){imgs[n]=im.src;render();probe(n+1);};
+    im.onload=function(){imgs.push(im.src);render();probe(n+1);};
     im.onerror=function(){
       var im2=new Image();
-      im2.onload=function(){imgs[n]=im2.src;render();probe(n+1);};
+      im2.onload=function(){imgs.push(im2.src);render();probe(n+1);};
       im2.onerror=function(){render();};
       im2.src='photos/'+vin+'-'+n+'.jpeg';
     };
     im.src='photos/'+vin+'-'+n+'.jpg';
   }
   probe(1);
-  function render(){
-    var host=document.getElementById('ph'+idx);if(!host)return;
-    var list=imgs.filter(Boolean);if(!list.length)return;
-    var cur=parseInt(host.getAttribute('data-cur')||'0',10);
-    if(cur>=list.length)cur=0;
-    var dots=list.length>1?('<div class="nav">'+list.map(function(_,k){return '<button type="button" class="'+(k===cur?'on':'')+'" aria-label="Photo '+(k+1)+'" onclick="phGo('+idx+','+k+')"></button>';}).join('')+'</div>'):'';
-    var arrows=list.length>1?('<button class="arrow l" aria-label="Previous photo" onclick="phStep('+idx+',-1)"></button><button class="arrow r" aria-label="Next photo" onclick="phStep('+idx+',1)"></button>'):'';
-    host.setAttribute('data-n',list.length);
-    host.setAttribute('data-cur',cur);
-    host._list=list;
-    host.innerHTML='<img src="'+list[cur]+'" alt="Truck photo">'+arrows+dots;
-  }
-  loadPhotos._renders=loadPhotos._renders||{};
-  loadPhotos._renders[idx]=render;
 }
-function phGo(idx,k){var h=document.getElementById('ph'+idx);if(!h||!h._list)return;h.setAttribute('data-cur',k);loadPhotos._renders[idx]&&loadPhotos._renders[idx]();}
-function phStep(idx,d){var h=document.getElementById('ph'+idx);if(!h||!h._list)return;var n=h._list.length,c=(parseInt(h.getAttribute('data-cur')||'0',10)+d+n)%n;phGo(idx,c);}
-
+document.addEventListener('click',function(e){
+  var b=e.target&&e.target.closest?e.target.closest('button[data-ph]'):null;
+  if(!b)return;
+  var host=document.getElementById('ph'+b.getAttribute('data-ph'));
+  if(!host||!host._render||!host._n)return;
+  if(b.hasAttribute('data-k'))host._cur=parseInt(b.getAttribute('data-k'),10);
+  else host._cur=((host._cur||0)+parseInt(b.getAttribute('data-step'),10)+host._n)%host._n;
+  host._render();
+});
 function applySearch(){
   var q=(document.getElementById('q').value||'').trim().toLowerCase();
   var shown=0;
