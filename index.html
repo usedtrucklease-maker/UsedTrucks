@@ -38,6 +38,8 @@ main{max-width:1100px;margin:18px auto 60px;padding:0 16px;display:grid;grid-tem
 .body{padding:12px 14px 14px;display:flex;flex-direction:column;gap:10px;flex:1}
 .ymm{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:22px;line-height:1.1;letter-spacing:.02em;text-transform:uppercase}
 .ymm .yr{color:var(--hazard-dk);margin-right:6px}
+.loc{display:inline-flex;align-items:center;gap:6px;font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--mute);margin-bottom:4px}
+.loc::before{content:'';width:8px;height:8px;background:var(--hazard);display:inline-block}
 .model{font-size:14px;color:var(--mute);font-weight:500;margin-top:2px;text-transform:none;font-family:'Barlow',sans-serif;letter-spacing:0}
 .plate{margin-top:auto;display:flex;align-items:center;gap:8px;background:var(--asphalt);border-radius:5px;padding:7px 10px}
 .plate .lbl{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:.22em;color:var(--hazard);text-transform:uppercase}
@@ -58,7 +60,7 @@ button:focus-visible,.search:focus-visible{outline:3px solid var(--hazard);outli
     <h1>Available Trucks</h1>
     <div class="count"><b id="n">0</b>ready to assign</div>
   </div>
-  <div class="bar"><input class="search" id="q" type="search" placeholder="Search year, make, model or VIN&hellip;" aria-label="Search trucks"></div>
+  <div class="bar"><input class="search" id="q" type="search" placeholder="Search state, year, make, model or VIN&hellip;" aria-label="Search trucks"></div>
 </header>
 
 <main id="grid"><div class="empty">Loading trucks&hellip;</div></main>
@@ -73,12 +75,12 @@ function cleanVin(v){return String(v||'').replace(/[^A-Za-z0-9]/g,'').toUpperCas
 function card(t,idx){
   var vin=cleanVin(t.vin);
   var ymm='<span class="yr">'+esc(t.year||'')+'</span>'+esc(t.make||'');
-  return '<article class="card" data-hay="'+esc(((t.year||'')+' '+(t.make||'')+' '+(t.model||'')+' '+vin).toLowerCase())+'">'
+  return '<article class="card" data-hay="'+esc(((t.year||'')+' '+(t.make||'')+' '+(t.model||'')+' '+(t.state||'')+' '+vin).toLowerCase())+'">'
     +'<div class="ph" id="ph'+idx+'">'
       +'<div class="none"><svg viewBox="0 0 64 40" fill="none"><path d="M2 30h8l6-14h20v14h10l6-8h8v8h2" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><circle cx="18" cy="32" r="5" stroke="currentColor" stroke-width="2.5"/><circle cx="48" cy="32" r="5" stroke="currentColor" stroke-width="2.5"/></svg>Photos coming soon</div>'
     +'</div>'
     +'<div class="body">'
-      +'<div><div class="ymm">'+ymm+'</div>'+(t.model?'<div class="model">'+esc(t.model)+'</div>':'')+'</div>'
+      +'<div>'+(t.state?'<div class="loc">'+esc(t.state)+'</div>':'')+'<div class="ymm">'+ymm+'</div>'+(t.model?'<div class="model">'+esc(t.model)+'</div>':'')+'</div>'
       +(t.notes?'<div class="notes">'+esc(t.notes)+'</div>':'')
       +'<div class="plate"><span class="lbl">VIN</span><code>'+esc(vin)+'</code><button type="button" onclick="copyVin(this,\''+esc(vin)+'\')">Copy</button></div>'
     +'</div></article>';
@@ -92,19 +94,18 @@ function copyVin(btn,vin){
 
 function loadPhotos(t,idx){
   var vin=cleanVin(t.vin);
-  var exts=['jpg','jpeg','png','JPG'];
+  // Photos must be named VIN-1.jpg, VIN-2.jpg ... consecutively (.jpg only).
+  // Probing stops at the first missing number, so a truck with no photos
+  // costs one request and a truck with 3 photos costs four.
   var imgs=[];
-  var pending=MAXPH*exts.length;
-  for(var n=1;n<=MAXPH;n++)(function(n){
-    var hit=false;
-    exts.forEach(function(ext){
-      var im=new Image();
-      im.onload=function(){if(!hit){hit=true;imgs[n]=im.src;render();}check();};
-      im.onerror=check;
-      im.src='photos/'+vin+'-'+n+'.'+ext;
-    });
-  })(n);
-  function check(){pending--;}
+  function probe(n){
+    if(n>MAXPH){render();return;}
+    var im=new Image();
+    im.onload=function(){imgs[n]=im.src;render();probe(n+1);};
+    im.onerror=function(){render();};
+    im.src='photos/'+vin+'-'+n+'.jpg';
+  }
+  probe(1);
   function render(){
     var host=document.getElementById('ph'+idx);if(!host)return;
     var list=imgs.filter(Boolean);if(!list.length)return;
