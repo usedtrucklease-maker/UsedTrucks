@@ -1,16 +1,530 @@
 [
   {
-    "vin": "5PVNJ7AN5P5T50419",
+    "vin": "1FVACWFC3PHUC8933",
     "year": 2023,
-    "make": "Hino",
-    "model": "258ALP — 21ft carrier",
-    "notes": "Example truck — replace this file with your real list."
+    "make": "Freightliner",
+    "model": "",
+    "state": "Kentucky",
+    "notes": ""
   },
   {
-    "vin": "3HAEUMML4RL875907",
+    "vin": "5PVNJ7AN1R5T50677",
+    "year": 2024,
+    "make": "Hino",
+    "model": "",
+    "state": "Florida",
+    "notes": ""
+  },
+  {
+    "vin": "5PVNJ7AN3P5T50466",
+    "year": 2023,
+    "make": "Hino",
+    "model": "",
+    "state": "Alabama",
+    "notes": ""
+  },
+  {
+    "vin": "5PVNJ7AN4S5T51022",
+    "year": 2025,
+    "make": "Hino",
+    "model": "",
+    "state": "South Carolina",
+    "notes": ""
+  },
+  {
+    "vin": "5PVNJ7AN5R5T50701",
+    "year": 2024,
+    "make": "Hino",
+    "model": "",
+    "state": "Pennslyvania",
+    "notes": ""
+  },
+  {
+    "vin": "5PVNJ7AN5R5T50701",
+    "year": 2024,
+    "make": "Hino",
+    "model": "",
+    "state": "Michigan",
+    "notes": ""
+  },
+  {
+    "vin": "5PVNJ7AN8R5T50806",
+    "year": 2024,
+    "make": "Hino",
+    "model": "",
+    "state": "Texas",
+    "notes": ""
+  },
+  {
+    "vin": "5PVNJ7AN9P5T50469",
+    "year": 2023,
+    "make": "Hino",
+    "model": "",
+    "state": "Texas",
+    "notes": ""
+  },
+  {
+    "vin": "5PVNJ7ANXP5T50223",
+    "year": 2023,
+    "make": "Hino",
+    "model": "",
+    "state": "South Carolina",
+    "notes": ""
+  },
+  {
+    "vin": "5PVNJ7ANXP5T50237",
+    "year": 2023,
+    "make": "Hino",
+    "model": "",
+    "state": "Wisconsin",
+    "notes": ""
+  },
+  {
+    "vin": "5PVNJ7ANXP5T50495",
+    "year": 2023,
+    "make": "Hino",
+    "model": "",
+    "state": "Missouri",
+    "notes": ""
+  },
+  {
+    "vin": "5PVNJ7AP0P5T50183",
+    "year": 2023,
+    "make": "Hino",
+    "model": "",
+    "state": "Columbus, OH",
+    "notes": ""
+  },
+  {
+    "vin": "5PVNJ7AP8S5T50666",
+    "year": 2025,
+    "make": "Hino",
+    "model": "",
+    "state": "Florida",
+    "notes": ""
+  },
+  {
+    "vin": "5PVNJ7APXR5T50288",
+    "year": 2024,
+    "make": "Hino",
+    "model": "",
+    "state": "Delaware",
+    "notes": ""
+  },
+  {
+    "vin": "5PVNJ7APXR5T50436",
+    "year": 2024,
+    "make": "Hino",
+    "model": "",
+    "state": "",
+    "notes": ""
+  },
+  {
+    "vin": "5PVNJ7BS1R5T50361",
+    "year": 2024,
+    "make": "Hino",
+    "model": "",
+    "state": "California",
+    "notes": ""
+  },
+  {
+    "vin": "5PVNJ7BS1R5T50361",
+    "year": 2024,
+    "make": "Hino",
+    "model": "",
+    "state": "Antelope, CA",
+    "notes": ""
+  },
+  {
+    "vin": "5PVNJ7BT4S5T50305",
+    "year": 2025,
+    "make": "Hino",
+    "model": "",
+    "state": "New Mexico",
+    "notes": ""
+  },
+  {
+    "vin": "5PVNJ7BT4S5T50305",
+    "year": 2025,
+    "make": "Hino",
+    "model": "",
+    "state": "New Mexico",
+    "notes": ""
+  },
+  {
+    "vin": "5PVNJ7BT4S5T50305",
+    "year": 2025,
+    "make": "Hino",
+    "model": "",
+    "state": "New Mexico",
+    "notes": ""
+  },
+  {
+    "vin": "5PVNJ7BT6R5T50140",
+    "year": 2024,
+    "make": "Hino",
+    "model": "",
+    "state": "New York ",
+    "notes": ""
+  },
+  {
+    "vin": "1HTEUMML0PS649143",
+    "year": 2023,
+    "make": "International",
+    "model": "",
+    "state": "Chehalis, WA",
+    "notes": ""
+  },
+  {
+    "vin": "1HTEUMML0PS649143",
+    "year": 2023,
+    "make": "International",
+    "model": "",
+    "state": "Eugene, OR",
+    "notes": ""
+  },
+  {
+    "vin": "3HAEUMML0PL532850",
+    "year": 2023,
+    "make": "International",
+    "model": "",
+    "state": "Illinois",
+    "notes": ""
+  },
+  {
+    "vin": "3HAEUMML0PL532850",
+    "year": 2023,
+    "make": "International",
+    "model": "",
+    "state": "Kentucky",
+    "notes": ""
+  },
+  {
+    "vin": "3HAEUMML0PL532850",
+    "year": 2023,
+    "make": "International",
+    "model": "",
+    "state": "Nancy, KY",
+    "notes": ""
+  },
+  {
+    "vin": "3HAEUMML1PL562441",
+    "year": 2023,
+    "make": "International",
+    "model": "",
+    "state": "Georgia",
+    "notes": ""
+  },
+  {
+    "vin": "3HAEUMML1PL562441",
+    "year": 2023,
+    "make": "International",
+    "model": "",
+    "state": "Warner Robins, GA",
+    "notes": ""
+  },
+  {
+    "vin": "3HAEUMML2PL514334",
+    "year": 2023,
+    "make": "International",
+    "model": "",
+    "state": "St.Cloud, MN  ",
+    "notes": ""
+  },
+  {
+    "vin": "3HAEUMML2PL514334",
+    "year": 2023,
+    "make": "International",
+    "model": "",
+    "state": "Ham Lake, MN",
+    "notes": ""
+  },
+  {
+    "vin": "3HAEUMML2PL536270",
+    "year": 2023,
+    "make": "International",
+    "model": "",
+    "state": "Bronx, NY",
+    "notes": ""
+  },
+  {
+    "vin": "3HAEUMML2PL536270",
+    "year": 2023,
+    "make": "International",
+    "model": "",
+    "state": "New York",
+    "notes": ""
+  },
+  {
+    "vin": "3HAEUMML4PL528283",
+    "year": 2023,
+    "make": "International",
+    "model": "",
+    "state": "Texas",
+    "notes": ""
+  },
+  {
+    "vin": "3HAEUMML4PL568556",
+    "year": 2023,
+    "make": "International",
+    "model": "",
+    "state": "Missouri",
+    "notes": ""
+  },
+  {
+    "vin": "3HAEUMML4PL568556",
+    "year": 2023,
+    "make": "International",
+    "model": "",
+    "state": "Indianapolis, IN ",
+    "notes": ""
+  },
+  {
+    "vin": "3HAEUMML4PL568556",
+    "year": 2023,
+    "make": "International",
+    "model": "",
+    "state": "Kentucky",
+    "notes": ""
+  },
+  {
+    "vin": "3HAEUMML5PL529376",
+    "year": 2023,
+    "make": "International",
+    "model": "",
+    "state": "Greer, SC",
+    "notes": ""
+  },
+  {
+    "vin": "3HAEUMML5PL567951",
+    "year": 2023,
+    "make": "International",
+    "model": "",
+    "state": "Gastonia, NC",
+    "notes": ""
+  },
+  {
+    "vin": "3HAEUMML5PL567951",
+    "year": 2023,
+    "make": "International",
+    "model": "",
+    "state": "Gastonia, NC",
+    "notes": ""
+  },
+  {
+    "vin": "3HAEUMML5PL567951",
+    "year": 2023,
+    "make": "International",
+    "model": "",
+    "state": "Kinston, NC",
+    "notes": ""
+  },
+  {
+    "vin": "3HAEUMML6PL529838",
+    "year": 2023,
+    "make": "International",
+    "model": "",
+    "state": "Washington",
+    "notes": ""
+  },
+  {
+    "vin": "3HAEUMML6RL613788",
     "year": 2024,
     "make": "International",
-    "model": "MV607 — wheel lift",
+    "model": "",
+    "state": "Washington",
+    "notes": ""
+  },
+  {
+    "vin": "3HAEUMML6RL613788",
+    "year": 2024,
+    "make": "International",
+    "model": "",
+    "state": "Burien, WA",
+    "notes": ""
+  },
+  {
+    "vin": "3HAEUMML7PL529508",
+    "year": 2023,
+    "make": "International",
+    "model": "",
+    "state": "Arlington, WA",
+    "notes": ""
+  },
+  {
+    "vin": "3HAEUMML7PL529508",
+    "year": 2023,
+    "make": "International",
+    "model": "",
+    "state": "Washington",
+    "notes": ""
+  },
+  {
+    "vin": "3HAEUMML7PL529508",
+    "year": 2023,
+    "make": "International",
+    "model": "",
+    "state": "Chehalis, WA",
+    "notes": ""
+  },
+  {
+    "vin": "3HAEUMML8PL556510",
+    "year": 2023,
+    "make": "International",
+    "model": "",
+    "state": "Lousiania",
+    "notes": ""
+  },
+  {
+    "vin": "3HAEUMML8PL567166",
+    "year": 2023,
+    "make": "International",
+    "model": "",
+    "state": "Utah",
+    "notes": ""
+  },
+  {
+    "vin": "3HAEUMML8PL567166",
+    "year": 2023,
+    "make": "International",
+    "model": "",
+    "state": "Riverton, UT",
+    "notes": ""
+  },
+  {
+    "vin": "3HAEUMML8RL310687",
+    "year": 2024,
+    "make": "International",
+    "model": "",
+    "state": "Tennesse",
+    "notes": ""
+  },
+  {
+    "vin": "3HAEUMML9PL522320",
+    "year": 2023,
+    "make": "International",
+    "model": "",
+    "state": "Dexter, OR",
+    "notes": ""
+  },
+  {
+    "vin": "3HAEUMML9PL522320",
+    "year": 2023,
+    "make": "International",
+    "model": "",
+    "state": "Harrisburg, OR",
+    "notes": ""
+  },
+  {
+    "vin": "3HAEUMML9RL718972",
+    "year": 2024,
+    "make": "International",
+    "model": "",
+    "state": "Mississippi",
+    "notes": ""
+  },
+  {
+    "vin": "3HAEUMMLXPL527185",
+    "year": 2023,
+    "make": "International",
+    "model": "",
+    "state": "Waynesboro, MS",
+    "notes": ""
+  },
+  {
+    "vin": "3HAEUMMLXPL528420",
+    "year": 2023,
+    "make": "International",
+    "model": "",
+    "state": "Colorado",
+    "notes": ""
+  },
+  {
+    "vin": "2NK3HM6X1SM154139",
+    "year": 2025,
+    "make": "Kenworth",
+    "model": "",
+    "state": "Texas",
+    "notes": ""
+  },
+  {
+    "vin": "2NKHHM6X2NM149090",
+    "year": 2022,
+    "make": "Kenworth",
+    "model": "",
+    "state": "Alabama",
+    "notes": ""
+  },
+  {
+    "vin": "2NKHHM6X2NM149090",
+    "year": 2022,
+    "make": "Kenworth",
+    "model": "",
+    "state": "Michigan",
+    "notes": ""
+  },
+  {
+    "vin": "2NKHHM6X2NM149090",
+    "year": 2022,
+    "make": "Kenworth",
+    "model": "",
+    "state": "Stow, OH ",
+    "notes": ""
+  },
+  {
+    "vin": "2NKHLJ9X0KM283150",
+    "year": 2019,
+    "make": "Kenworth",
+    "model": "",
+    "state": "Oklahoma",
+    "notes": ""
+  },
+  {
+    "vin": "2NKHLJ9X6MM456205",
+    "year": 2021,
+    "make": "Kenworth",
+    "model": "",
+    "state": "Alabama",
+    "notes": ""
+  },
+  {
+    "vin": "2NKHLJ9X9MM456229",
+    "year": 2021,
+    "make": "Kenworth",
+    "model": "",
+    "state": "Arizona",
+    "notes": ""
+  },
+  {
+    "vin": "1M2MDBAA4RS014781",
+    "year": 2024,
+    "make": "Mack",
+    "model": "",
+    "state": "Minnesota",
+    "notes": ""
+  },
+  {
+    "vin": "1M2MDBAA4RS014781",
+    "year": 2024,
+    "make": "Mack",
+    "model": "",
+    "state": "South Dakota",
+    "notes": ""
+  },
+  {
+    "vin": "1M2MDBAAXRS011836",
+    "year": 2024,
+    "make": "Mack",
+    "model": "",
+    "state": "California",
+    "notes": ""
+  },
+  {
+    "vin": "1M2MDBAAXRS011836",
+    "year": 2024,
+    "make": "Mack",
+    "model": "",
+    "state": "Arizona",
     "notes": ""
   }
 ]
