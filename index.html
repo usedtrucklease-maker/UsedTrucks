@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Available Trucks</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --asphalt:#171a1e; --steel:#2b3138; --zinc:#c9ccc6; --day:#f2f3f0;
+  --hazard:#f5a300; --hazard-dk:#c98600; --ink:#171a1e; --mute:#5b6167;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:'Barlow',system-ui,sans-serif;background:var(--day);color:var(--ink)}
+.stripe{height:10px;background:repeating-linear-gradient(-45deg,var(--hazard) 0 14px,var(--asphalt) 14px 28px)}
+header{background:var(--asphalt);color:#fff;padding:18px 16px 14px}
+.hd-inner{max-width:1100px;margin:0 auto;display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}
+h1{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(26px,6vw,40px);letter-spacing:.04em;text-transform:uppercase;line-height:1}
+h1 small{display:block;font-size:12px;letter-spacing:.28em;color:var(--hazard);font-weight:600;margin-bottom:4px}
+.count{font-family:'Barlow Condensed',sans-serif;font-size:15px;letter-spacing:.08em;color:var(--zinc);text-transform:uppercase}
+.count b{color:var(--hazard);font-size:22px;margin-right:4px}
+.bar{max-width:1100px;margin:14px auto 0;padding:0 16px}
+.search{width:100%;max-width:420px;background:#fff;border:2px solid var(--steel);border-radius:6px;padding:10px 12px;font-size:15px;font-family:inherit}
+.search:focus{outline:none;border-color:var(--hazard)}
+main{max-width:1100px;margin:18px auto 60px;padding:0 16px;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px}
+.card{background:#fff;border:1px solid #d8dad5;border-radius:8px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 1px 3px rgba(23,26,30,.08)}
+.ph{position:relative;aspect-ratio:4/3;background:var(--steel);overflow:hidden}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.ph .none{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#7b828a;font-family:'Barlow Condensed',sans-serif;letter-spacing:.12em;text-transform:uppercase;font-size:13px;gap:8px}
+.ph .none svg{width:64px;height:40px;opacity:.5}
+.nav{position:absolute;inset:auto 0 8px 0;display:flex;justify-content:center;gap:6px}
+.nav button{width:10px;height:10px;border-radius:50%;border:none;background:rgba(255,255,255,.45);cursor:pointer;padding:0}
+.nav button.on{background:var(--hazard)}
+.arrow{position:absolute;top:0;bottom:0;width:34%;border:none;background:transparent;cursor:pointer}
+.arrow.l{left:0}.arrow.r{right:0}
+.body{padding:12px 14px 14px;display:flex;flex-direction:column;gap:10px;flex:1}
+.ymm{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:22px;line-height:1.1;letter-spacing:.02em;text-transform:uppercase}
+.ymm .yr{color:var(--hazard-dk);margin-right:6px}
+.model{font-size:14px;color:var(--mute);font-weight:500;margin-top:2px;text-transform:none;font-family:'Barlow',sans-serif;letter-spacing:0}
+.plate{margin-top:auto;display:flex;align-items:center;gap:8px;background:var(--asphalt);border-radius:5px;padding:7px 10px}
+.plate .lbl{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:.22em;color:var(--hazard);text-transform:uppercase}
+.plate code{font-family:'IBM Plex Mono',monospace;font-size:13px;color:#fff;letter-spacing:.04em;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.plate button{border:1px solid var(--hazard);background:transparent;color:var(--hazard);font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:.1em;text-transform:uppercase;border-radius:4px;padding:3px 8px;cursor:pointer}
+.plate button:hover{background:var(--hazard);color:var(--asphalt)}
+.notes{font-size:13px;color:var(--mute);line-height:1.45}
+.empty{grid-column:1/-1;text-align:center;padding:70px 20px;color:var(--mute);font-size:15px}
+footer{background:var(--asphalt);color:#8b929a;text-align:center;padding:18px;font-size:12px;letter-spacing:.06em}
+@media (prefers-reduced-motion:no-preference){.card{transition:transform .15s ease,box-shadow .15s ease}.card:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(23,26,30,.14)}}
+button:focus-visible,.search:focus-visible{outline:3px solid var(--hazard);outline-offset:2px}
+</style>
+</head>
+<body>
+<div class="stripe" aria-hidden="true"></div>
+<header>
+  <div class="hd-inner">
+    <h1>Available Trucks</h1>
+    <div class="count"><b id="n">0</b>ready to assign</div>
+  </div>
+  <div class="bar"><input class="search" id="q" type="search" placeholder="Search year, make, model or VIN&hellip;" aria-label="Search trucks"></div>
+</header>
+
+<main id="grid"><div class="empty">Loading trucks&hellip;</div></main>
+
+<footer>Trucks shown are subject to availability</footer>
+
+<script>
+var MAXPH=6, trucks=[];
+function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function cleanVin(v){return String(v||'').replace(/[^A-Za-z0-9]/g,'').toUpperCase();}
+
+function card(t,idx){
+  var vin=cleanVin(t.vin);
+  var ymm='<span class="yr">'+esc(t.year||'')+'</span>'+esc(t.make||'');
+  return '<article class="card" data-hay="'+esc(((t.year||'')+' '+(t.make||'')+' '+(t.model||'')+' '+vin).toLowerCase())+'">'
+    +'<div class="ph" id="ph'+idx+'">'
+      +'<div class="none"><svg viewBox="0 0 64 40" fill="none"><path d="M2 30h8l6-14h20v14h10l6-8h8v8h2" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><circle cx="18" cy="32" r="5" stroke="currentColor" stroke-width="2.5"/><circle cx="48" cy="32" r="5" stroke="currentColor" stroke-width="2.5"/></svg>Photos coming soon</div>'
+    +'</div>'
+    +'<div class="body">'
+      +'<div><div class="ymm">'+ymm+'</div>'+(t.model?'<div class="model">'+esc(t.model)+'</div>':'')+'</div>'
+      +(t.notes?'<div class="notes">'+esc(t.notes)+'</div>':'')
+      +'<div class="plate"><span class="lbl">VIN</span><code>'+esc(vin)+'</code><button type="button" onclick="copyVin(this,\''+esc(vin)+'\')">Copy</button></div>'
+    +'</div></article>';
+}
+
+function copyVin(btn,vin){
+  function done(ok){btn.textContent=ok?'Copied':'Copy failed';setTimeout(function(){btn.textContent='Copy';},1400);}
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(vin).then(function(){done(true);},function(){done(false);});}
+  else done(false);
+}
+
+function loadPhotos(t,idx){
+  var vin=cleanVin(t.vin);
+  var exts=['jpg','jpeg','png','JPG'];
+  var imgs=[];
+  var pending=MAXPH*exts.length;
+  for(var n=1;n<=MAXPH;n++)(function(n){
+    var hit=false;
+    exts.forEach(function(ext){
+      var im=new Image();
+      im.onload=function(){if(!hit){hit=true;imgs[n]=im.src;render();}check();};
+      im.onerror=check;
+      im.src='photos/'+vin+'-'+n+'.'+ext;
+    });
+  })(n);
+  function check(){pending--;}
+  function render(){
+    var host=document.getElementById('ph'+idx);if(!host)return;
+    var list=imgs.filter(Boolean);if(!list.length)return;
+    var cur=parseInt(host.getAttribute('data-cur')||'0',10);
+    if(cur>=list.length)cur=0;
+    var dots=list.length>1?('<div class="nav">'+list.map(function(_,k){return '<button type="button" class="'+(k===cur?'on':'')+'" aria-label="Photo '+(k+1)+'" onclick="phGo('+idx+','+k+')"></button>';}).join('')+'</div>'):'';
+    var arrows=list.length>1?('<button class="arrow l" aria-label="Previous photo" onclick="phStep('+idx+',-1)"></button><button class="arrow r" aria-label="Next photo" onclick="phStep('+idx+',1)"></button>'):'';
+    host.setAttribute('data-n',list.length);
+    host.setAttribute('data-cur',cur);
+    host._list=list;
+    host.innerHTML='<img src="'+list[cur]+'" alt="Truck photo">'+arrows+dots;
+  }
+  loadPhotos._renders=loadPhotos._renders||{};
+  loadPhotos._renders[idx]=render;
+}
+function phGo(idx,k){var h=document.getElementById('ph'+idx);if(!h||!h._list)return;h.setAttribute('data-cur',k);loadPhotos._renders[idx]&&loadPhotos._renders[idx]();}
+function phStep(idx,d){var h=document.getElementById('ph'+idx);if(!h||!h._list)return;var n=h._list.length,c=(parseInt(h.getAttribute('data-cur')||'0',10)+d+n)%n;phGo(idx,c);}
+
+function applySearch(){
+  var q=(document.getElementById('q').value||'').trim().toLowerCase();
+  var shown=0;
+  document.querySelectorAll('#grid .card').forEach(function(c){
+    var ok=!q||c.getAttribute('data-hay').indexOf(q)>=0;
+    c.style.display=ok?'':'none';if(ok)shown++;
+  });
+  document.getElementById('n').textContent=shown;
+}
+
+fetch('trucks.json?v='+Date.now()).then(function(r){return r.json();}).then(function(data){
+  trucks=Array.isArray(data)?data:[];
+  var g=document.getElementById('grid');
+  if(!trucks.length){g.innerHTML='<div class="empty">No trucks listed right now &mdash; check back soon.</div>';document.getElementById('n').textContent=0;return;}
+  g.innerHTML=trucks.map(function(t,i){return card(t,i);}).join('');
+  document.getElementById('n').textContent=trucks.length;
+  trucks.forEach(function(t,i){loadPhotos(t,i);});
+}).catch(function(){
+  document.getElementById('grid').innerHTML='<div class="empty">Could not load trucks.json &mdash; make sure it sits next to this page.</div>';
+});
+document.getElementById('q').addEventListener('input',applySearch);
+</script>
+</body>
+</html>

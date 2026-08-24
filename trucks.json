@@ -1,0 +1,16 @@
+[
+  {
+    "vin": "5PVNJ7AN5P5T50419",
+    "year": 2023,
+    "make": "Hino",
+    "model": "258ALP — 21ft carrier",
+    "notes": "Example truck — replace this file with your real list."
+  },
+  {
+    "vin": "3HAEUMML4RL875907",
+    "year": 2024,
+    "make": "International",
+    "model": "MV607 — wheel lift",
+    "notes": ""
+  }
+]
