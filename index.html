@@ -113,17 +113,17 @@ function loadPhotos(t,idx){
     host._render=render;
     host.innerHTML='<img src="'+imgs[cur]+'" alt="Truck photo">'+arrows+dots;
   }
+  var EXTS=['jpg','jpeg','JPG','JPEG','png'];
   function probe(n){
     if(n>MAXPH){render();return;}
+    tryExt(n,0);
+  }
+  function tryExt(n,e){
+    if(e>=EXTS.length){render();return;}   // no extension worked: stop at this number
     var im=new Image();
     im.onload=function(){imgs.push(im.src);render();probe(n+1);};
-    im.onerror=function(){
-      var im2=new Image();
-      im2.onload=function(){imgs.push(im2.src);render();probe(n+1);};
-      im2.onerror=function(){render();};
-      im2.src='photos/'+vin+'-'+n+'.jpeg';
-    };
-    im.src='photos/'+vin+'-'+n+'.jpg';
+    im.onerror=function(){tryExt(n,e+1);};
+    im.src='photos/'+vin+'-'+n+'.'+EXTS[e];
   }
   probe(1);
 }
