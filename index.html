@@ -61,6 +61,13 @@ main{max-width:1100px;margin:18px auto 60px;padding:0 16px;display:grid;grid-tem
 .plate code.vintog{cursor:pointer}
 .notes{font-size:13px;color:var(--mute);line-height:1.45}
 .empty{grid-column:1/-1;text-align:center;padding:70px 20px;color:var(--mute);font-size:15px}
+.info{max-width:1100px;margin:0 auto 50px;padding:0 16px}
+.info-box{background:#fff;border:1px solid #e1e4e8;border-left:4px solid var(--hazard);border-radius:8px;padding:20px 22px}
+.info-box h3{font-family:'Barlow Condensed',sans-serif;font-size:21px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--asphalt);margin:0 0 8px}
+.info-box h3+p{margin-top:0}
+.info-box p{font-size:14px;line-height:1.6;color:var(--steel);margin:0 0 12px}
+.info-box p:last-child{margin-bottom:0}
+.info-box .div{height:1px;background:#e1e4e8;margin:18px 0}
 footer{background:var(--asphalt);color:#8b929a;text-align:center;padding:18px;font-size:12px;letter-spacing:.06em}
 @media (prefers-reduced-motion:no-preference){.card{transition:transform .15s ease,box-shadow .15s ease}.card:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(23,26,30,.14)}}
 button:focus-visible,.search:focus-visible{outline:3px solid var(--hazard);outline-offset:2px}
@@ -97,7 +104,20 @@ button:focus-visible,.search:focus-visible{outline:3px solid var(--hazard);outli
 
 <main id="grid"><div class="empty">Loading trucks&hellip;</div></main>
 
-<footer>Trucks shown are subject to availability</footer>
+<section class="info">
+  <div class="info-box">
+    <h3>Good to Know</h3>
+    <p><b>All prices are approximate.</b> Weekly and monthly amounts shown are estimates &mdash; final numbers are confirmed when your lease is prepared.</p>
+    <p><b>Trucks are leased as-is, with some exceptions.</b> Ask about the specific truck you're interested in.</p>
+    <div class="div"></div>
+    <h3>How a Balloon Payment Works</h3>
+    <p>Some trucks show a balloon payment. A balloon means part of the truck's cost is set aside until the <b>end</b> of the lease instead of being built into your regular payments &mdash; which makes your weekly and monthly payments <b>lower</b> during the lease.</p>
+    <p>At the end of the lease term, the balloon amount is due as one final payment. For example: a truck listed with a $50,000 balloon has lower weekly payments the whole way through, and the $50,000 is settled at the end.</p>
+    <p>No balloon shown on a truck? Then there's no final payment &mdash; the regular payments cover everything.</p>
+  </div>
+</section>
+
+<footer>Trucks shown are subject to availability &middot; All prices are approximate</footer>
 
 <script>
 var MAXPH=6, trucks=[];
