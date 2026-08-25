@@ -31,6 +31,10 @@ main{max-width:1100px;margin:18px auto 60px;padding:0 16px;display:grid;grid-tem
 .card.leased .ph img{filter:grayscale(1) brightness(.8)}
 .card.leased .ymm,.card.leased .model,.card.leased .loc{opacity:.55}
 .card.pending .rib{background:#f5a300;color:#181a1c}
+.bar2{display:flex;gap:10px;justify-content:center;margin-top:8px}
+.zipin{max-width:140px;text-align:center;letter-spacing:.1em}
+.rngsel{max-width:200px;cursor:pointer}
+.loc .dist{color:#b57700;font-weight:700;margin-left:6px}
 .rib{position:absolute;top:14px;right:-34px;transform:rotate(38deg);background:repeating-linear-gradient(-45deg,var(--hazard) 0 10px,var(--asphalt) 10px 20px);color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;letter-spacing:.22em;text-transform:uppercase;padding:5px 44px;z-index:3;text-shadow:0 1px 3px rgba(0,0,0,.65);pointer-events:none}
 .ph{position:relative;aspect-ratio:4/3;background:var(--steel);overflow:hidden}
 .ph img{width:100%;height:100%;object-fit:cover;display:block}
@@ -107,6 +111,17 @@ button:focus-visible,.search:focus-visible{outline:3px solid var(--hazard);outli
     <div class="count"><b id="n">0</b></div>
   </div>
   <div class="bar"><input class="search" id="q" type="search" placeholder="Search state, year, make, model or VIN&hellip;" aria-label="Search trucks"></div>
+  <div class="bar bar2">
+    <input class="search zipin" id="zip" type="text" inputmode="numeric" maxlength="5" placeholder="Zip code" aria-label="Your zip code">
+    <select class="search rngsel" id="rng" aria-label="Distance range">
+      <option value="0">Any distance</option>
+      <option value="100">Within 100 mi</option>
+      <option value="250">Within 250 mi</option>
+      <option value="500">Within 500 mi</option>
+      <option value="1000">Within 1000 mi</option>
+    </select>
+  </div>
+  <div id="dnote" style="display:none;max-width:640px;margin:6px auto 0;padding:0 16px;font-size:11px;letter-spacing:.05em;color:#8b929a;text-align:center">DISTANCES ARE APPROXIMATE &mdash; BASED ON EACH TRUCK'S STATE</div>
 </header>
 
 <main id="grid"><div class="empty">Loading trucks&hellip;</div></main>
@@ -137,13 +152,13 @@ function card(t,idx){
   var ymm='<span class="yr">'+esc(t.year||'')+'</span>'+esc(t.make||'');
   var leased=(t.leased===true||t.leased==='true');
   var pending=!leased&&(t.pending===true||t.pending==='true');
-  return '<article class="card'+(leased?' leased':'')+(pending?' pending':'')+'" data-leased="'+(leased?'1':'0')+'" data-pending="'+(pending?'1':'0')+'" data-hay="'+esc(((t.year||'')+' '+(t.make||'')+' '+(t.model||'')+' '+(t.state||'')+' '+(t.miles||'')+' '+vin).toLowerCase())+'">'
+  return '<article class="card'+(leased?' leased':'')+(pending?' pending':'')+'" data-leased="'+(leased?'1':'0')+'" data-pending="'+(pending?'1':'0')+'" data-state="'+esc(String(t.state||''))+'" data-hay="'+esc(((t.year||'')+' '+(t.make||'')+' '+(t.model||'')+' '+(t.state||'')+' '+(t.miles||'')+' '+vin).toLowerCase())+'">'
     +(leased?'<div class="rib">Leased</div>':(pending?'<div class="rib">Pending</div>':''))
     +'<div class="ph" id="ph'+idx+'">'
       +'<div class="none"><svg viewBox="0 0 64 40" fill="none"><path d="M2 30h8l6-14h20v14h10l6-8h8v8h2" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><circle cx="18" cy="32" r="5" stroke="currentColor" stroke-width="2.5"/><circle cx="48" cy="32" r="5" stroke="currentColor" stroke-width="2.5"/></svg>Photos coming soon</div>'
     +'</div>'
     +'<div class="body">'
-      +'<div>'+(t.state?'<div class="loc">'+esc(t.state)+'</div>':'')+'<div class="ymm">'+ymm+'</div>'+(t.model?'<div class="model">'+esc(t.model)+'</div>':'')+(t.miles?'<div class="miles"><b>'+esc(Number(String(t.miles).replace(/[^0-9]/g,''))?Number(String(t.miles).replace(/[^0-9]/g,'')).toLocaleString():t.miles)+'</b> MILES</div>':'')+'</div>'
+      +'<div>'+(t.state?'<div class="loc">'+esc(t.state)+'<span class="dist"></span></div>':'')+'<div class="ymm">'+ymm+'</div>'+(t.model?'<div class="model">'+esc(t.model)+'</div>':'')+(t.miles?'<div class="miles"><b>'+esc(Number(String(t.miles).replace(/[^0-9]/g,''))?Number(String(t.miles).replace(/[^0-9]/g,'')).toLocaleString():t.miles)+'</b> MILES</div>':'')+'</div>'
       +(t.weekly?('<div class="price"><div class="row1"><span class="wk">$'+Number(t.weekly).toLocaleString()+'<i>/WK</i></span><span class="mo">$'+Number(t.monthly||0).toLocaleString()+'/mo</span></div><div class="row2">'+[(t.months?(t.months+' months remaining'):''),(t.payoff?('Approx. payoff $'+Number(t.payoff).toLocaleString()):''),(t.balloon?('Balloon $'+Number(t.balloon).toLocaleString()):'')].filter(Boolean).join(' · ')+'</div></div>'):'')
       +(t.notes?'<div class="notes">'+esc(t.notes)+'</div>':'')
       +'<div class="plate"><span class="lbl">VIN</span><code class="vintog" data-full="'+esc(vin)+'" data-short="'+esc(vin8)+'" title="Tap to show full VIN" onclick="togVin(this)">'+esc(vin8)+'</code><button type="button" onclick="copyVin(this,\''+esc(vin)+'\')">Copy</button></div>'
@@ -199,16 +214,50 @@ document.addEventListener('click',function(e){
   else host._cur=((host._cur||0)+parseInt(b.getAttribute('data-step'),10)+host._n)%host._n;
   host._render();
 });
+var STATE_LOC={alabama:[32.8,-86.8,'al'],alaska:[64.0,-152.0,'ak'],arizona:[34.2,-111.6,'az'],arkansas:[34.8,-92.4,'ar'],california:[37.2,-119.4,'ca'],colorado:[39.0,-105.5,'co'],connecticut:[41.6,-72.7,'ct'],delaware:[39.0,-75.5,'de'],florida:[28.6,-82.4,'fl'],georgia:[32.6,-83.4,'ga'],hawaii:[20.3,-156.4,'hi'],idaho:[44.4,-114.6,'id'],illinois:[40.0,-89.2,'il'],indiana:[39.9,-86.3,'in'],iowa:[42.1,-93.5,'ia'],kansas:[38.5,-98.4,'ks'],kentucky:[37.5,-85.3,'ky'],louisiana:[31.0,-92.0,'la'],maine:[45.4,-69.2,'me'],maryland:[39.0,-76.8,'md'],massachusetts:[42.3,-71.8,'ma'],michigan:[44.3,-85.4,'mi'],minnesota:[46.3,-94.3,'mn'],mississippi:[32.7,-89.7,'ms'],missouri:[38.4,-92.5,'mo'],montana:[47.0,-109.6,'mt'],nebraska:[41.5,-99.8,'ne'],nevada:[39.3,-116.6,'nv'],'new hampshire':[43.7,-71.6,'nh'],'new jersey':[40.2,-74.7,'nj'],'new mexico':[34.4,-106.1,'nm'],'new york':[42.9,-75.5,'ny'],'north carolina':[35.5,-79.4,'nc'],'north dakota':[47.4,-100.5,'nd'],ohio:[40.3,-82.8,'oh'],oklahoma:[35.6,-97.5,'ok'],oregon:[43.9,-120.6,'or'],pennsylvania:[40.9,-77.8,'pa'],'rhode island':[41.7,-71.6,'ri'],'south carolina':[33.9,-80.9,'sc'],'south dakota':[44.4,-100.2,'sd'],tennessee:[35.9,-86.4,'tn'],texas:[31.5,-99.4,'tx'],utah:[39.3,-111.7,'ut'],vermont:[44.1,-72.7,'vt'],virginia:[37.5,-78.9,'va'],washington:[47.4,-120.4,'wa'],'west virginia':[38.6,-80.6,'wv'],wisconsin:[44.6,-89.7,'wi'],wyoming:[43.0,-107.6,'wy'],'district of columbia':[38.9,-77.0,'dc']};
+var STATE_BY_ABBR={};Object.keys(STATE_LOC).forEach(function(k){STATE_BY_ABBR[STATE_LOC[k][2]]=k;});
+var MAKE_ALIAS={intl:'international',ih:'international',kw:'kenworth',pete:'peterbilt',chevy:'chevrolet',freightlnr:'freightliner'};
+var USER_LOC=null,_zipTimer=null,_zipLast='';
+function stateLoc(name){var k=String(name||'').trim().toLowerCase();if(STATE_LOC[k])return STATE_LOC[k];if(STATE_BY_ABBR[k])return STATE_LOC[STATE_BY_ABBR[k]];return null;}
+function hav(a,b,c,d){function r(x){return x*Math.PI/180;}var dLa=r(c-a),dLo=r(d-b);var h=Math.sin(dLa/2)*Math.sin(dLa/2)+Math.cos(r(a))*Math.cos(r(c))*Math.sin(dLo/2)*Math.sin(dLo/2);return 3959*2*Math.atan2(Math.sqrt(h),Math.sqrt(1-h));}
+function onZip(){
+  clearTimeout(_zipTimer);
+  var z=String((document.getElementById('zip')||{}).value||'').replace(/[^0-9]/g,'');
+  if(z.length!==5){USER_LOC=null;_zipLast='';applySearch();return;}
+  if(z===_zipLast&&USER_LOC){applySearch();return;}
+  _zipTimer=setTimeout(function(){
+    fetch('https://api.zippopotam.us/us/'+z).then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(j){
+      var pl=(j.places&&j.places[0])||null;
+      USER_LOC=pl?{lat:parseFloat(pl.latitude),lng:parseFloat(pl.longitude)}:null;
+      _zipLast=z;applySearch();
+    }).catch(function(){USER_LOC=null;_zipLast='';applySearch();});
+  },350);
+}
 function applySearch(){
   var q=(document.getElementById('q').value||'').trim().toLowerCase();
-  var shown=0;
+  var toks=q?q.split(/\s+/).map(function(t){if(MAKE_ALIAS[t])return MAKE_ALIAS[t];if(STATE_BY_ABBR[t])return STATE_BY_ABBR[t];return t;}):[];
+  var rng=parseInt(((document.getElementById('rng')||{}).value)||'0',10)||0;
+  var note=document.getElementById('dnote');if(note)note.style.display=USER_LOC?'':'none';
+  var shown=0,items=[];
   document.querySelectorAll('#grid .card').forEach(function(c){
-    var ok=!q||c.getAttribute('data-hay').indexOf(q)>=0;
+    var hay=c.getAttribute('data-hay')||'';
+    var ok=toks.every(function(t){return hay.indexOf(t)>=0;});
+    var d=null;
+    if(USER_LOC){var sl=stateLoc(c.getAttribute('data-state'));if(sl)d=hav(USER_LOC.lat,USER_LOC.lng,sl[0],sl[1]);}
+    if(ok&&USER_LOC&&rng>0&&(d==null||d>rng))ok=false;
+    var ds=c.querySelector('.dist');if(ds)ds.textContent=(USER_LOC&&d!=null)?('\u00b7 \u2248 '+Math.round(d)+' mi'):'';
     c.style.display=ok?'':'none';
-    if(ok&&c.getAttribute('data-leased')!=='1')shown++;
+    if(ok&&c.getAttribute('data-leased')!=='1'&&c.getAttribute('data-pending')!=='1')shown++;
+    items.push({el:c,d:(d==null?Infinity:d),g:(c.getAttribute('data-leased')==='1'?2:(c.getAttribute('data-pending')==='1'?1:0))});
   });
+  if(USER_LOC){
+    items.sort(function(a,b){return a.g-b.g||a.d-b.d;});
+    var grid=document.getElementById('grid');
+    items.forEach(function(it){grid.appendChild(it.el);});
+  }
   document.getElementById('n').textContent=shown;
 }
+(function(){var z=document.getElementById('zip');if(z)z.addEventListener('input',onZip);var r=document.getElementById('rng');if(r)r.addEventListener('change',applySearch);})();
 
 var GATE_EPOCH=Date.UTC(2026,0,5); /* a Monday; codes rotate Mondays */
 function _gwk(){return Math.floor((Date.now()-GATE_EPOCH)/604800000);}
