@@ -80,6 +80,11 @@ button:focus-visible,.search:focus-visible{outline:3px solid var(--hazard);outli
 #gate input:focus{outline:none;border-color:var(--hazard)}
 #gate button{width:100%;margin-top:12px;padding:13px;font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:var(--hazard);color:var(--asphalt);border:none;border-radius:6px;cursor:pointer}
 #gate .gerr{display:none;color:#ff9d9d;font-size:13px;margin-top:12px}
+#gate .abox{width:100%;max-width:560px;max-height:86vh;overflow-y:auto;background:#fff;border-left:4px solid var(--hazard);border-radius:8px;padding:22px 24px;text-align:left}
+#gate .abox h2{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--asphalt);margin:0 0 8px}
+#gate .abox p{font-size:14px;line-height:1.6;color:var(--steel);margin:0 0 12px}
+#gate .abox .div{height:1px;background:#e1e4e8;margin:16px 0}
+#gate .abox button{width:100%;margin-top:6px;padding:13px;font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:var(--hazard);color:var(--asphalt);border:none;border-radius:6px;cursor:pointer}
 </style>
 </head>
 <body>
@@ -216,6 +221,23 @@ function gateTry(){
   else if(_gday()<2&&val===_gcode(w-1))match=w-1;
   if(match===null){document.getElementById('gt-err').style.display='block';inp.value='';inp.focus();return;}
   try{localStorage.setItem('ut_gate',JSON.stringify({w:match}));}catch(e){}
+  showAck();
+}
+function showAck(){
+  var g=document.getElementById('gate');if(!g)return;
+  g.innerHTML='<div class="abox">'
+    +'<h2>Good to Know</h2>'
+    +'<p><b>All prices are approximate.</b> Weekly and monthly amounts shown are estimates &mdash; final numbers are confirmed when your lease is prepared.</p>'
+    +'<p><b>Trucks are leased as-is, with some exceptions.</b> Ask about the specific truck you\'re interested in.</p>'
+    +'<div class="div"></div>'
+    +'<h2>How a Balloon Payment Works</h2>'
+    +'<p>Some trucks show a balloon payment. A balloon means part of the truck\'s cost is set aside until the <b>end</b> of the lease instead of being built into your regular payments &mdash; which makes your weekly and monthly payments <b>lower</b> during the lease. At the end of the term, the balloon amount is due as one final payment.</p>'
+    +'<p>No balloon shown on a truck? Then there\'s no final payment &mdash; the regular payments cover everything.</p>'
+    +'<button type="button" onclick="ackGo()">I Understand &mdash; Show Me the Trucks</button>'
+    +'</div>';
+}
+function ackGo(){
+  try{var v=JSON.parse(localStorage.getItem('ut_gate')||'{}');v.ack=true;localStorage.setItem('ut_gate',JSON.stringify(v));}catch(e){}
   var g=document.getElementById('gate');if(g)g.remove();
   boot();
 }
@@ -233,8 +255,11 @@ fetch('trucks.json?v='+Date.now()).then(function(r){return r.json();}).then(func
   document.getElementById('grid').innerHTML='<div class="empty">Could not load trucks.json &mdash; make sure it sits next to this page.</div>';
 });
 }
-if(_gateOk()){var _g0=document.getElementById('gate');if(_g0)_g0.remove();boot();}
-else{setTimeout(function(){var i=document.getElementById('gt-in');if(i)i.focus();},150);}
+if(_gateOk()){
+  var _ack=false;try{_ack=!!(JSON.parse(localStorage.getItem('ut_gate')||'{}').ack);}catch(e){}
+  if(_ack){var _g0=document.getElementById('gate');if(_g0)_g0.remove();boot();}
+  else{showAck();}
+}else{setTimeout(function(){var i=document.getElementById('gt-in');if(i)i.focus();},150);}
 document.getElementById('q').addEventListener('input',applySearch);
 </script>
 </body>
