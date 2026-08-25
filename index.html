@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
 <title>Available Trucks</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
@@ -63,10 +64,29 @@ main{max-width:1100px;margin:18px auto 60px;padding:0 16px;display:grid;grid-tem
 footer{background:var(--asphalt);color:#8b929a;text-align:center;padding:18px;font-size:12px;letter-spacing:.06em}
 @media (prefers-reduced-motion:no-preference){.card{transition:transform .15s ease,box-shadow .15s ease}.card:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(23,26,30,.14)}}
 button:focus-visible,.search:focus-visible{outline:3px solid var(--hazard);outline-offset:2px}
+#gate{position:fixed;inset:0;background:var(--asphalt);z-index:999;display:flex;align-items:center;justify-content:center;padding:20px}
+#gate .gbox{width:100%;max-width:360px;text-align:center}
+#gate .gstripe{height:10px;background:repeating-linear-gradient(-45deg,var(--hazard) 0 16px,var(--asphalt) 16px 32px);border-radius:3px;margin-bottom:26px}
+#gate h2{font-family:'Barlow Condensed',sans-serif;font-size:34px;font-weight:700;letter-spacing:.04em;color:#fff;margin:0 0 6px;text-transform:uppercase}
+#gate p{color:#8b929a;font-size:13px;margin:0 0 20px}
+#gate input{width:100%;box-sizing:border-box;padding:13px 14px;font-size:18px;font-family:'IBM Plex Mono',monospace;letter-spacing:.18em;text-transform:uppercase;text-align:center;border:2px solid #3a4048;border-radius:6px;background:#22262b;color:#fff}
+#gate input:focus{outline:none;border-color:var(--hazard)}
+#gate button{width:100%;margin-top:12px;padding:13px;font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:var(--hazard);color:var(--asphalt);border:none;border-radius:6px;cursor:pointer}
+#gate .gerr{display:none;color:#ff9d9d;font-size:13px;margin-top:12px}
 </style>
 </head>
 <body>
 <div class="stripe" aria-hidden="true"></div>
+<div id="gate">
+  <div class="gbox">
+    <div class="gstripe"></div>
+    <h2>Available Trucks</h2>
+    <p>Enter the access code you were given to view the current truck list.</p>
+    <input id="gt-in" type="text" autocomplete="off" autocapitalize="characters" spellcheck="false" maxlength="12" placeholder="ACCESS CODE" aria-label="Access code">
+    <button type="button" onclick="gateTry()">View Trucks</button>
+    <div class="gerr" id="gt-err">That code isn't valid &mdash; it may have expired. Ask your contact for this week's code.</div>
+  </div>
+</div>
 <header>
   <div class="hd-inner">
     <h1>Available Trucks</h1>
@@ -162,6 +182,25 @@ function applySearch(){
   document.getElementById('n').textContent=shown;
 }
 
+var GATE_EPOCH=Date.UTC(2026,0,5); /* a Monday; codes rotate Mondays */
+function _gwk(){return Math.floor((Date.now()-GATE_EPOCH)/604800000);}
+function _gday(){return Math.floor((Date.now()-GATE_EPOCH)/86400000)%7;}
+function _gcode(w){var s=w+'|TIB-TRUCKS-KS-2026';var h=2166136261;for(var i=0;i<s.length;i++){h=(h^s.charCodeAt(i))>>>0;h=(h*16777619)>>>0;}var A='ABCDEFGHJKMNPQRSTUVWXYZ23456789',c='';for(var j=0;j<6;j++){c+=A.charAt(h%31);h=((h*16777619)+j+1)>>>0;}return c;}
+function _gateValidWeek(cw){var w=_gwk();return cw===w||(cw===w-1&&_gday()<2);}
+function _gateOk(){try{var v=JSON.parse(localStorage.getItem('ut_gate')||'null');return !!(v&&typeof v.w==='number'&&_gateValidWeek(v.w));}catch(e){return false;}}
+function gateTry(){
+  var inp=document.getElementById('gt-in');
+  var val=String(inp.value||'').toUpperCase().replace(/[^A-Z0-9]/g,'');
+  var w=_gwk(),match=null;
+  if(val===_gcode(w))match=w;
+  else if(_gday()<2&&val===_gcode(w-1))match=w-1;
+  if(match===null){document.getElementById('gt-err').style.display='block';inp.value='';inp.focus();return;}
+  try{localStorage.setItem('ut_gate',JSON.stringify({w:match}));}catch(e){}
+  var g=document.getElementById('gate');if(g)g.remove();
+  boot();
+}
+document.getElementById('gt-in').addEventListener('keydown',function(e){if(e.key==='Enter')gateTry();});
+function boot(){
 fetch('trucks.json?v='+Date.now()).then(function(r){return r.json();}).then(function(data){
   trucks=Array.isArray(data)?data:[];
   var g=document.getElementById('grid');
@@ -173,6 +212,9 @@ fetch('trucks.json?v='+Date.now()).then(function(r){return r.json();}).then(func
 }).catch(function(){
   document.getElementById('grid').innerHTML='<div class="empty">Could not load trucks.json &mdash; make sure it sits next to this page.</div>';
 });
+}
+if(_gateOk()){var _g0=document.getElementById('gate');if(_g0)_g0.remove();boot();}
+else{setTimeout(function(){var i=document.getElementById('gt-in');if(i)i.focus();},150);}
 document.getElementById('q').addEventListener('input',applySearch);
 </script>
 </body>
