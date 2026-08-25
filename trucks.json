@@ -100,7 +100,8 @@
     "monthly": 1907,
     "weekly": 440,
     "months": 60,
-    "payoff": 99000
+    "payoff": 99000,
+    "pending": true
   },
   {
     "vin": "5PVNJ7ANXP5T50223",
