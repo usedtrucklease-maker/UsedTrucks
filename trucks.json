@@ -548,7 +548,8 @@
     "weekly": 592,
     "months": 60,
     "payoff": 171000,
-    "balloon": 75000
+    "balloon": 75000,
+    "pending": true
   },
   {
     "vin": "2NKHHM6X2NM149090",
