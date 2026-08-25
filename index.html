@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
+<script data-goatcounter="https://usedtrucklease.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 <title>Available Trucks</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
@@ -221,6 +222,7 @@ function gateTry(){
   else if(_gday()<2&&val===_gcode(w-1))match=w-1;
   if(match===null){document.getElementById('gt-err').style.display='block';inp.value='';inp.focus();return;}
   try{localStorage.setItem('ut_gate',JSON.stringify({w:match}));}catch(e){}
+  try{if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:'unlocked',title:'Entered access code',event:true});}catch(e){}
   showAck();
 }
 function showAck(){
