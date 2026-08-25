@@ -141,7 +141,7 @@ function card(t,idx){
     +'</div>'
     +'<div class="body">'
       +'<div>'+(t.state?'<div class="loc">'+esc(t.state)+'</div>':'')+'<div class="ymm">'+ymm+'</div>'+(t.model?'<div class="model">'+esc(t.model)+'</div>':'')+(t.miles?'<div class="miles"><b>'+esc(Number(String(t.miles).replace(/[^0-9]/g,''))?Number(String(t.miles).replace(/[^0-9]/g,'')).toLocaleString():t.miles)+'</b> MILES</div>':'')+'</div>'
-      +(t.weekly?('<div class="price"><div class="row1"><span class="wk">$'+Number(t.weekly).toLocaleString()+'<i>/WK</i></span><span class="mo">$'+Number(t.monthly||0).toLocaleString()+'/mo</span></div><div class="row2">'+(t.payoff?('Approx. payoff $'+Number(t.payoff).toLocaleString()):'')+(t.payoff&&t.balloon?' \u00b7 ':'')+(t.balloon?('Balloon $'+Number(t.balloon).toLocaleString()):'')+'</div></div>'):'')
+      +(t.weekly?('<div class="price"><div class="row1"><span class="wk">$'+Number(t.weekly).toLocaleString()+'<i>/WK</i></span><span class="mo">$'+Number(t.monthly||0).toLocaleString()+'/mo</span></div><div class="row2">'+[(t.months?(t.months+' months remaining'):''),(t.payoff?('Approx. payoff $'+Number(t.payoff).toLocaleString()):''),(t.balloon?('Balloon $'+Number(t.balloon).toLocaleString()):'')].filter(Boolean).join(' · ')+'</div></div>'):'')
       +(t.notes?'<div class="notes">'+esc(t.notes)+'</div>':'')
       +'<div class="plate"><span class="lbl">VIN</span><code class="vintog" data-full="'+esc(vin)+'" data-short="'+esc(vin8)+'" title="Tap to show full VIN" onclick="togVin(this)">'+esc(vin8)+'</code><button type="button" onclick="copyVin(this,\''+esc(vin)+'\')">Copy</button></div>'
     +'</div></article>';
