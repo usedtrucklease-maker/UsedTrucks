@@ -35,9 +35,8 @@
     "leased": false,
     "notes": "",
     "payoff": 93000,
-    "monthly": 1590,
-    "weekly": 367,
-    "balloon": 25000
+    "monthly": 1922,
+    "weekly": 443
   },
   {
     "vin": "5PVNJ7AN4S5T51022",
@@ -103,9 +102,8 @@
     "leased": false,
     "notes": "",
     "payoff": 87000,
-    "monthly": 1473,
-    "weekly": 340,
-    "balloon": 25000
+    "monthly": 1804,
+    "weekly": 416
   },
   {
     "vin": "5PVNJ7ANXP5T50237",
@@ -130,9 +128,8 @@
     "leased": false,
     "notes": "",
     "payoff": 93000,
-    "monthly": 1604,
-    "weekly": 370,
-    "balloon": 25000
+    "monthly": 1936,
+    "weekly": 447
   },
   {
     "vin": "5PVNJ7AP0P5T50183",
@@ -212,8 +209,9 @@
     "leased": false,
     "notes": "",
     "payoff": 135000,
-    "monthly": 2797,
-    "weekly": 646
+    "monthly": 2466,
+    "weekly": 569,
+    "balloon": 25000
   },
   {
     "vin": "5PVNJ7BT4S5T50305",
@@ -280,9 +278,8 @@
     "leased": false,
     "notes": "",
     "payoff": 92000,
-    "monthly": 1572,
-    "weekly": 363,
-    "balloon": 25000
+    "monthly": 1903,
+    "weekly": 439
   },
   {
     "vin": "3HAEUMML2PL514334",
@@ -334,9 +331,8 @@
     "leased": false,
     "notes": "",
     "payoff": 99000,
-    "monthly": 1718,
-    "weekly": 396,
-    "balloon": 25000
+    "monthly": 2049,
+    "weekly": 473
   },
   {
     "vin": "3HAEUMML5PL529376",
@@ -587,8 +583,9 @@
     "leased": false,
     "notes": "",
     "payoff": 140000,
-    "monthly": 2907,
-    "weekly": 671
+    "monthly": 2841,
+    "weekly": 656,
+    "balloon": 5000
   },
   {
     "vin": "1M2MDBAAXRS011836",
