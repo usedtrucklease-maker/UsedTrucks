@@ -7,7 +7,10 @@
     "state": "Kentucky",
     "miles": "122724",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 79000,
+    "monthly": 1649,
+    "weekly": 381
   },
   {
     "vin": "5PVNJ7AN1R5T50677",
@@ -17,7 +20,10 @@
     "state": "Florida",
     "miles": "200555",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 94000,
+    "monthly": 1955,
+    "weekly": 451
   },
   {
     "vin": "5PVNJ7AN3P5T50466",
@@ -27,7 +33,10 @@
     "state": "Alabama",
     "miles": "193399",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 93000,
+    "monthly": 1922,
+    "weekly": 443
   },
   {
     "vin": "5PVNJ7AN4S5T51022",
@@ -37,7 +46,10 @@
     "state": "South Carolina",
     "miles": "93106",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 129000,
+    "monthly": 2674,
+    "weekly": 617
   },
   {
     "vin": "5PVNJ7AN5R5T50701",
@@ -47,7 +59,10 @@
     "state": "Pennslyvania",
     "miles": "103834",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 117000,
+    "monthly": 2429,
+    "weekly": 561
   },
   {
     "vin": "5PVNJ7AN8R5T50806",
@@ -57,7 +72,10 @@
     "state": "Texas",
     "miles": "55436",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 101000,
+    "monthly": 2101,
+    "weekly": 485
   },
   {
     "vin": "5PVNJ7AN9P5T50469",
@@ -67,7 +85,10 @@
     "state": "Texas",
     "miles": "122920",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 99000,
+    "monthly": 2048,
+    "weekly": 473
   },
   {
     "vin": "5PVNJ7ANXP5T50223",
@@ -77,7 +98,10 @@
     "state": "South Carolina",
     "miles": "141323",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 87000,
+    "monthly": 1804,
+    "weekly": 416
   },
   {
     "vin": "5PVNJ7ANXP5T50237",
@@ -87,7 +111,10 @@
     "state": "Wisconsin",
     "miles": "160598",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 75000,
+    "monthly": 1564,
+    "weekly": 361
   },
   {
     "vin": "5PVNJ7ANXP5T50495",
@@ -97,7 +124,10 @@
     "state": "Missouri",
     "miles": "118236",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 93000,
+    "monthly": 1936,
+    "weekly": 447
   },
   {
     "vin": "5PVNJ7AP0P5T50183",
@@ -107,7 +137,10 @@
     "state": "Columbus, OH",
     "miles": "73209",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 83000,
+    "monthly": 1721,
+    "weekly": 397
   },
   {
     "vin": "5PVNJ7AP8S5T50666",
@@ -117,7 +150,10 @@
     "state": "Florida",
     "miles": "97843",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 127000,
+    "monthly": 2639,
+    "weekly": 609
   },
   {
     "vin": "5PVNJ7APXR5T50288",
@@ -127,7 +163,10 @@
     "state": "Delaware",
     "miles": "134230",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 89000,
+    "monthly": 1839,
+    "weekly": 424
   },
   {
     "vin": "5PVNJ7APXR5T50436",
@@ -137,7 +176,10 @@
     "state": "",
     "miles": "65175",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 144000,
+    "monthly": 2986,
+    "weekly": 689
   },
   {
     "vin": "5PVNJ7BS1R5T50361",
@@ -147,7 +189,23 @@
     "state": "California",
     "miles": "70950",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 144000,
+    "monthly": 2998,
+    "weekly": 692
+  },
+  {
+    "vin": "5PVNJ7BT1R5T50093",
+    "year": 2024,
+    "make": "Hino",
+    "model": "",
+    "state": "New Mexico",
+    "miles": "149522",
+    "leased": false,
+    "notes": "",
+    "payoff": 135000,
+    "monthly": 2797,
+    "weekly": 646
   },
   {
     "vin": "5PVNJ7BT4S5T50305",
@@ -157,7 +215,10 @@
     "state": "New Mexico",
     "miles": "70390",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 150000,
+    "monthly": 3109,
+    "weekly": 718
   },
   {
     "vin": "5PVNJ7BT6R5T50140",
@@ -167,17 +228,23 @@
     "state": "New York ",
     "miles": "233679",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 112000,
+    "monthly": 2317,
+    "weekly": 535
   },
   {
     "vin": "1HTEUMML0PS649143",
     "year": 2023,
     "make": "International",
     "model": "",
-    "state": "Chehalis, WA",
+    "state": "Oregon",
     "miles": "146477",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 82000,
+    "monthly": 1704,
+    "weekly": 393
   },
   {
     "vin": "3HAEUMML0PL532850",
@@ -187,7 +254,10 @@
     "state": "Illinois",
     "miles": "141029",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 111000,
+    "monthly": 2308,
+    "weekly": 533
   },
   {
     "vin": "3HAEUMML1PL562441",
@@ -197,7 +267,10 @@
     "state": "Georgia",
     "miles": "179943",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 92000,
+    "monthly": 1903,
+    "weekly": 439
   },
   {
     "vin": "3HAEUMML2PL514334",
@@ -207,7 +280,10 @@
     "state": "St.Cloud, MN  ",
     "miles": "128835",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 111000,
+    "monthly": 2298,
+    "weekly": 530
   },
   {
     "vin": "3HAEUMML2PL536270",
@@ -217,7 +293,10 @@
     "state": "Bronx, NY",
     "miles": "237257",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 83000,
+    "monthly": 1726,
+    "weekly": 398
   },
   {
     "vin": "3HAEUMML4PL528283",
@@ -227,7 +306,10 @@
     "state": "Texas",
     "miles": "205793",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 86000,
+    "monthly": 1789,
+    "weekly": 413
   },
   {
     "vin": "3HAEUMML4PL568556",
@@ -237,7 +319,10 @@
     "state": "Missouri",
     "miles": "170549",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 99000,
+    "monthly": 2049,
+    "weekly": 473
   },
   {
     "vin": "3HAEUMML5PL529376",
@@ -247,7 +332,10 @@
     "state": "Greer, SC",
     "miles": "178926",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 96000,
+    "monthly": 1995,
+    "weekly": 460
   },
   {
     "vin": "3HAEUMML5PL567951",
@@ -257,37 +345,49 @@
     "state": "Gastonia, NC",
     "miles": "229710",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 92000,
+    "monthly": 1915,
+    "weekly": 442
   },
   {
     "vin": "3HAEUMML6PL529838",
     "year": 2023,
     "make": "International",
     "model": "",
-    "state": "Washington",
+    "state": "Oregon",
     "miles": "157961",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 94000,
+    "monthly": 1945,
+    "weekly": 449
   },
   {
     "vin": "3HAEUMML6RL613788",
     "year": 2024,
     "make": "International",
     "model": "",
-    "state": "Washington",
+    "state": "Oregon",
     "miles": "130149",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 104000,
+    "monthly": 2164,
+    "weekly": 499
   },
   {
     "vin": "3HAEUMML7PL529508",
     "year": 2023,
     "make": "International",
     "model": "",
-    "state": "Arlington, WA",
+    "state": "Oregon",
     "miles": "141585",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 72000,
+    "monthly": 1500,
+    "weekly": 346
   },
   {
     "vin": "3HAEUMML8PL556510",
@@ -297,7 +397,10 @@
     "state": "Lousiania",
     "miles": "229760",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 77000,
+    "monthly": 1606,
+    "weekly": 371
   },
   {
     "vin": "3HAEUMML8PL567166",
@@ -307,7 +410,10 @@
     "state": "Utah",
     "miles": "122508",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 112000,
+    "monthly": 2322,
+    "weekly": 536
   },
   {
     "vin": "3HAEUMML8RL310687",
@@ -317,17 +423,23 @@
     "state": "Tennesse",
     "miles": "168269",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 103000,
+    "monthly": 2146,
+    "weekly": 495
   },
   {
     "vin": "3HAEUMML9PL522320",
     "year": 2023,
     "make": "International",
     "model": "",
-    "state": "Dexter, OR",
+    "state": "Oregon",
     "miles": "106698",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 107000,
+    "monthly": 2218,
+    "weekly": 512
   },
   {
     "vin": "3HAEUMML9RL718972",
@@ -337,7 +449,10 @@
     "state": "Mississippi",
     "miles": "221991",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 90000,
+    "monthly": 1870,
+    "weekly": 432
   },
   {
     "vin": "3HAEUMMLXPL527185",
@@ -347,7 +462,10 @@
     "state": "Waynesboro, MS",
     "miles": "276888",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 90000,
+    "monthly": 1863,
+    "weekly": 430
   },
   {
     "vin": "3HAEUMMLXPL528420",
@@ -357,7 +475,10 @@
     "state": "Colorado",
     "miles": "210813",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 67000,
+    "monthly": 1398,
+    "weekly": 323
   },
   {
     "vin": "2NK3HM6X1SM154139",
@@ -367,7 +488,10 @@
     "state": "Texas",
     "miles": "8210",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 171000,
+    "monthly": 3560,
+    "weekly": 821
   },
   {
     "vin": "2NKHHM6X2NM149090",
@@ -387,7 +511,10 @@
     "state": "Oklahoma",
     "miles": "245198",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 71000,
+    "monthly": 1484,
+    "weekly": 342
   },
   {
     "vin": "2NKHLJ9X6MM456205",
@@ -397,7 +524,10 @@
     "state": "Alabama",
     "miles": "147475",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 60000,
+    "monthly": 1246,
+    "weekly": 287
   },
   {
     "vin": "2NKHLJ9X9MM456229",
@@ -417,7 +547,23 @@
     "state": "Minnesota",
     "miles": "140399",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 141000,
+    "monthly": 2933,
+    "weekly": 677
+  },
+  {
+    "vin": "1M2MDBAA5RS014790",
+    "year": 2024,
+    "make": "Mack",
+    "model": "",
+    "state": "Texas",
+    "miles": "119241",
+    "leased": false,
+    "notes": "",
+    "payoff": 140000,
+    "monthly": 2907,
+    "weekly": 671
   },
   {
     "vin": "1M2MDBAAXRS011836",
@@ -427,6 +573,9 @@
     "state": "California",
     "miles": "130185",
     "leased": false,
-    "notes": ""
+    "notes": "",
+    "payoff": 106000,
+    "monthly": 2204,
+    "weekly": 509
   }
 ]
