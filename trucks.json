@@ -8,9 +8,11 @@
     "miles": "122724",
     "leased": false,
     "notes": "",
-    "payoff": 79000,
-    "monthly": 1649,
-    "weekly": 381
+    "monthly": 2207,
+    "weekly": 509,
+    "months": 18,
+    "payoff": 65000,
+    "balloon": 25500
   },
   {
     "vin": "5PVNJ7AN1R5T50677",
@@ -21,9 +23,10 @@
     "miles": "200555",
     "leased": false,
     "notes": "",
-    "payoff": 94000,
     "monthly": 1955,
-    "weekly": 451
+    "weekly": 451,
+    "months": 60,
+    "payoff": 94000
   },
   {
     "vin": "5PVNJ7AN3P5T50466",
@@ -34,9 +37,10 @@
     "miles": "193399",
     "leased": false,
     "notes": "",
-    "payoff": 93000,
     "monthly": 1922,
-    "weekly": 443
+    "weekly": 443,
+    "months": 60,
+    "payoff": 93000
   },
   {
     "vin": "5PVNJ7AN4S5T51022",
@@ -47,9 +51,10 @@
     "miles": "93106",
     "leased": false,
     "notes": "",
-    "payoff": 129000,
     "monthly": 2343,
     "weekly": 541,
+    "months": 60,
+    "payoff": 129000,
     "balloon": 25000
   },
   {
@@ -61,9 +66,10 @@
     "miles": "103834",
     "leased": false,
     "notes": "",
-    "payoff": 117000,
     "monthly": 2098,
     "weekly": 484,
+    "months": 60,
+    "payoff": 117000,
     "balloon": 25000
   },
   {
@@ -75,9 +81,11 @@
     "miles": "55436",
     "leased": false,
     "notes": "",
-    "payoff": 101000,
-    "monthly": 2101,
-    "weekly": 485
+    "monthly": 2241,
+    "weekly": 517,
+    "months": 32,
+    "payoff": 99000,
+    "balloon": 27000
   },
   {
     "vin": "5PVNJ7AN9P5T50469",
@@ -88,9 +96,10 @@
     "miles": "122920",
     "leased": false,
     "notes": "",
-    "payoff": 99000,
     "monthly": 1907,
-    "weekly": 440
+    "weekly": 440,
+    "months": 60,
+    "payoff": 99000
   },
   {
     "vin": "5PVNJ7ANXP5T50223",
@@ -101,9 +110,10 @@
     "miles": "141323",
     "leased": false,
     "notes": "",
-    "payoff": 87000,
     "monthly": 1804,
-    "weekly": 416
+    "weekly": 416,
+    "months": 60,
+    "payoff": 87000
   },
   {
     "vin": "5PVNJ7ANXP5T50237",
@@ -114,9 +124,10 @@
     "miles": "160598",
     "leased": false,
     "notes": "",
-    "payoff": 75000,
     "monthly": 1564,
-    "weekly": 361
+    "weekly": 361,
+    "months": 60,
+    "payoff": 75000
   },
   {
     "vin": "5PVNJ7ANXP5T50495",
@@ -127,9 +138,10 @@
     "miles": "118236",
     "leased": false,
     "notes": "",
-    "payoff": 93000,
     "monthly": 1936,
-    "weekly": 447
+    "weekly": 447,
+    "months": 60,
+    "payoff": 93000
   },
   {
     "vin": "5PVNJ7AP0P5T50183",
@@ -140,9 +152,11 @@
     "miles": "73209",
     "leased": false,
     "notes": "",
-    "payoff": 83000,
-    "monthly": 1721,
-    "weekly": 397
+    "monthly": 2313,
+    "weekly": 534,
+    "months": 27,
+    "payoff": 90000,
+    "balloon": 27500
   },
   {
     "vin": "5PVNJ7AP8S5T50666",
@@ -153,9 +167,10 @@
     "miles": "97843",
     "leased": false,
     "notes": "",
-    "payoff": 127000,
     "monthly": 2308,
     "weekly": 533,
+    "months": 60,
+    "payoff": 127000,
     "balloon": 25000
   },
   {
@@ -167,9 +182,10 @@
     "miles": "134230",
     "leased": false,
     "notes": "",
-    "payoff": 89000,
     "monthly": 1839,
-    "weekly": 424
+    "weekly": 424,
+    "months": 60,
+    "payoff": 89000
   },
   {
     "vin": "5PVNJ7APXR5T50436",
@@ -180,9 +196,10 @@
     "miles": "65175",
     "leased": false,
     "notes": "",
-    "payoff": 144000,
     "monthly": 2323,
     "weekly": 536,
+    "months": 60,
+    "payoff": 144000,
     "balloon": 50000
   },
   {
@@ -194,9 +211,10 @@
     "miles": "70950",
     "leased": false,
     "notes": "",
-    "payoff": 144000,
     "monthly": 2335,
     "weekly": 539,
+    "months": 60,
+    "payoff": 144000,
     "balloon": 50000
   },
   {
@@ -208,9 +226,10 @@
     "miles": "149522",
     "leased": false,
     "notes": "",
-    "payoff": 135000,
     "monthly": 2466,
     "weekly": 569,
+    "months": 60,
+    "payoff": 135000,
     "balloon": 25000
   },
   {
@@ -222,9 +241,10 @@
     "miles": "70390",
     "leased": false,
     "notes": "",
-    "payoff": 150000,
     "monthly": 2446,
     "weekly": 565,
+    "months": 60,
+    "payoff": 150000,
     "balloon": 50000
   },
   {
@@ -236,9 +256,10 @@
     "miles": "233679",
     "leased": false,
     "notes": "",
-    "payoff": 112000,
     "monthly": 1985,
     "weekly": 458,
+    "months": 60,
+    "payoff": 112000,
     "balloon": 25000
   },
   {
@@ -250,9 +271,11 @@
     "miles": "146477",
     "leased": false,
     "notes": "",
+    "monthly": 2467,
+    "weekly": 569,
+    "months": 22,
     "payoff": 82000,
-    "monthly": 1704,
-    "weekly": 393
+    "balloon": 27500
   },
   {
     "vin": "3HAEUMML0PL532850",
@@ -263,9 +286,10 @@
     "miles": "141029",
     "leased": false,
     "notes": "",
-    "payoff": 111000,
     "monthly": 1976,
     "weekly": 456,
+    "months": 60,
+    "payoff": 111000,
     "balloon": 25000
   },
   {
@@ -277,9 +301,10 @@
     "miles": "179943",
     "leased": false,
     "notes": "",
-    "payoff": 92000,
     "monthly": 1903,
-    "weekly": 439
+    "weekly": 439,
+    "months": 60,
+    "payoff": 92000
   },
   {
     "vin": "3HAEUMML2PL514334",
@@ -290,9 +315,10 @@
     "miles": "128835",
     "leased": false,
     "notes": "",
-    "payoff": 111000,
     "monthly": 1967,
     "weekly": 454,
+    "months": 60,
+    "payoff": 111000,
     "balloon": 25000
   },
   {
@@ -304,9 +330,10 @@
     "miles": "237257",
     "leased": false,
     "notes": "",
-    "payoff": 83000,
     "monthly": 1726,
-    "weekly": 398
+    "weekly": 398,
+    "months": 60,
+    "payoff": 83000
   },
   {
     "vin": "3HAEUMML4PL528283",
@@ -317,9 +344,10 @@
     "miles": "205793",
     "leased": false,
     "notes": "",
-    "payoff": 86000,
     "monthly": 1789,
-    "weekly": 413
+    "weekly": 413,
+    "months": 60,
+    "payoff": 86000
   },
   {
     "vin": "3HAEUMML4PL568556",
@@ -330,9 +358,10 @@
     "miles": "170549",
     "leased": false,
     "notes": "",
-    "payoff": 99000,
     "monthly": 2049,
-    "weekly": 473
+    "weekly": 473,
+    "months": 60,
+    "payoff": 99000
   },
   {
     "vin": "3HAEUMML5PL529376",
@@ -343,9 +372,10 @@
     "miles": "178926",
     "leased": false,
     "notes": "",
-    "payoff": 96000,
     "monthly": 1995,
-    "weekly": 460
+    "weekly": 460,
+    "months": 60,
+    "payoff": 96000
   },
   {
     "vin": "3HAEUMML5PL567951",
@@ -356,9 +386,10 @@
     "miles": "229710",
     "leased": false,
     "notes": "",
-    "payoff": 92000,
     "monthly": 1915,
-    "weekly": 442
+    "weekly": 442,
+    "months": 60,
+    "payoff": 92000
   },
   {
     "vin": "3HAEUMML6PL529838",
@@ -369,9 +400,10 @@
     "miles": "157961",
     "leased": false,
     "notes": "",
-    "payoff": 94000,
     "monthly": 1945,
-    "weekly": 449
+    "weekly": 449,
+    "months": 60,
+    "payoff": 94000
   },
   {
     "vin": "3HAEUMML6RL613788",
@@ -382,9 +414,10 @@
     "miles": "130149",
     "leased": false,
     "notes": "",
-    "payoff": 104000,
     "monthly": 2164,
-    "weekly": 499
+    "weekly": 499,
+    "months": 60,
+    "payoff": 104000
   },
   {
     "vin": "3HAEUMML7PL529508",
@@ -395,9 +428,11 @@
     "miles": "141585",
     "leased": false,
     "notes": "",
-    "payoff": 72000,
-    "monthly": 1500,
-    "weekly": 346
+    "monthly": 2297,
+    "weekly": 530,
+    "months": 20,
+    "payoff": 70000,
+    "balloon": 25000
   },
   {
     "vin": "3HAEUMML8PL556510",
@@ -408,9 +443,10 @@
     "miles": "229760",
     "leased": false,
     "notes": "",
-    "payoff": 80000,
     "monthly": 1661,
-    "weekly": 383
+    "weekly": 383,
+    "months": 60,
+    "payoff": 80000
   },
   {
     "vin": "3HAEUMML8PL567166",
@@ -421,9 +457,10 @@
     "miles": "122508",
     "leased": false,
     "notes": "",
-    "payoff": 112000,
     "monthly": 1991,
     "weekly": 459,
+    "months": 60,
+    "payoff": 112000,
     "balloon": 25000
   },
   {
@@ -435,9 +472,10 @@
     "miles": "168269",
     "leased": false,
     "notes": "",
-    "payoff": 103000,
     "monthly": 2146,
-    "weekly": 495
+    "weekly": 495,
+    "months": 60,
+    "payoff": 103000
   },
   {
     "vin": "3HAEUMML9PL522320",
@@ -448,9 +486,10 @@
     "miles": "106698",
     "leased": false,
     "notes": "",
-    "payoff": 107000,
     "monthly": 1887,
     "weekly": 435,
+    "months": 60,
+    "payoff": 107000,
     "balloon": 25000
   },
   {
@@ -462,9 +501,10 @@
     "miles": "221991",
     "leased": false,
     "notes": "",
-    "payoff": 90000,
     "monthly": 1870,
-    "weekly": 432
+    "weekly": 432,
+    "months": 60,
+    "payoff": 90000
   },
   {
     "vin": "3HAEUMMLXPL527185",
@@ -475,9 +515,10 @@
     "miles": "276888",
     "leased": false,
     "notes": "",
-    "payoff": 90000,
     "monthly": 1863,
-    "weekly": 430
+    "weekly": 430,
+    "months": 60,
+    "payoff": 90000
   },
   {
     "vin": "3HAEUMMLXPL528420",
@@ -488,9 +529,10 @@
     "miles": "210813",
     "leased": false,
     "notes": "",
-    "payoff": 75000,
     "monthly": 1557,
-    "weekly": 359
+    "weekly": 359,
+    "months": 60,
+    "payoff": 75000
   },
   {
     "vin": "2NK3HM6X1SM154139",
@@ -501,9 +543,10 @@
     "miles": "8210",
     "leased": false,
     "notes": "",
-    "payoff": 171000,
     "monthly": 2565,
     "weekly": 592,
+    "months": 60,
+    "payoff": 171000,
     "balloon": 75000
   },
   {
@@ -515,9 +558,10 @@
     "miles": "108002",
     "leased": false,
     "notes": "",
-    "payoff": 100000,
     "monthly": 1744,
     "weekly": 403,
+    "months": 60,
+    "payoff": 100000,
     "balloon": 25000
   },
   {
@@ -529,9 +573,10 @@
     "miles": "245198",
     "leased": false,
     "notes": "",
-    "payoff": 71000,
     "monthly": 1484,
-    "weekly": 342
+    "weekly": 342,
+    "months": 60,
+    "payoff": 71000
   },
   {
     "vin": "2NKHLJ9X6MM456205",
@@ -542,9 +587,10 @@
     "miles": "147475",
     "leased": false,
     "notes": "",
-    "payoff": 60000,
     "monthly": 1246,
-    "weekly": 287
+    "weekly": 287,
+    "months": 60,
+    "payoff": 60000
   },
   {
     "vin": "2NKHLJ9X9MM456229",
@@ -555,9 +601,10 @@
     "miles": "202050",
     "leased": false,
     "notes": "",
-    "payoff": 40000,
     "monthly": 830,
-    "weekly": 192
+    "weekly": 192,
+    "months": 60,
+    "payoff": 40000
   },
   {
     "vin": "1M2MDBAA4RS014781",
@@ -568,9 +615,10 @@
     "miles": "140399",
     "leased": false,
     "notes": "",
-    "payoff": 141000,
     "monthly": 2270,
     "weekly": 524,
+    "months": 60,
+    "payoff": 141000,
     "balloon": 50000
   },
   {
@@ -582,9 +630,10 @@
     "miles": "119241",
     "leased": false,
     "notes": "",
-    "payoff": 140000,
     "monthly": 2841,
     "weekly": 656,
+    "months": 60,
+    "payoff": 140000,
     "balloon": 5000
   },
   {
@@ -596,9 +645,10 @@
     "miles": "130185",
     "leased": false,
     "notes": "",
-    "payoff": 106000,
     "monthly": 1873,
     "weekly": 432,
+    "months": 60,
+    "payoff": 106000,
     "balloon": 25000
   }
 ]
