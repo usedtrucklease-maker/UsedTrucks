@@ -46,6 +46,12 @@ main{max-width:1100px;margin:18px auto 60px;padding:0 16px;display:grid;grid-tem
 .model{font-size:14px;color:var(--mute);font-weight:500;margin-top:2px;text-transform:none;font-family:'Barlow',sans-serif;letter-spacing:0}
 .miles{font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:600;letter-spacing:.08em;color:var(--steel);margin-top:3px}
 .miles b{color:var(--hazard-dk)}
+.price{margin-top:8px;padding:7px 10px;background:rgba(245,163,0,.13);border-left:3px solid var(--hazard);border-radius:4px}
+.price .row1{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.price .wk{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:700;color:var(--hazard-dk);line-height:1}
+.price .wk i{font-style:normal;font-size:13px;letter-spacing:.06em}
+.price .mo{font-size:13px;font-weight:600;color:var(--steel)}
+.price .row2{margin-top:3px;font-size:11px;letter-spacing:.04em;color:var(--steel)}
 .plate{margin-top:auto;display:flex;align-items:center;gap:8px;background:var(--asphalt);border-radius:5px;padding:7px 10px}
 .plate .lbl{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:.22em;color:var(--hazard);text-transform:uppercase}
 .plate code{font-family:'IBM Plex Mono',monospace;font-size:13px;color:#fff;letter-spacing:.04em;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -90,6 +96,7 @@ function card(t,idx){
     +'</div>'
     +'<div class="body">'
       +'<div>'+(t.state?'<div class="loc">'+esc(t.state)+'</div>':'')+'<div class="ymm">'+ymm+'</div>'+(t.model?'<div class="model">'+esc(t.model)+'</div>':'')+(t.miles?'<div class="miles"><b>'+esc(Number(String(t.miles).replace(/[^0-9]/g,''))?Number(String(t.miles).replace(/[^0-9]/g,'')).toLocaleString():t.miles)+'</b> MILES</div>':'')+'</div>'
+      +(t.weekly?('<div class="price"><div class="row1"><span class="wk">$'+Number(t.weekly).toLocaleString()+'<i>/WK</i></span><span class="mo">$'+Number(t.monthly||0).toLocaleString()+'/mo</span></div><div class="row2">'+(t.payoff?('Approx. payoff $'+Number(t.payoff).toLocaleString()):'')+(t.payoff&&t.balloon?' \u00b7 ':'')+(t.balloon?('Balloon $'+Number(t.balloon).toLocaleString()):'')+'</div></div>'):'')
       +(t.notes?'<div class="notes">'+esc(t.notes)+'</div>':'')
       +'<div class="plate"><span class="lbl">VIN</span><code class="vintog" data-full="'+esc(vin)+'" data-short="'+esc(vin8)+'" title="Tap to show full VIN" onclick="togVin(this)">'+esc(vin8)+'</code><button type="button" onclick="copyVin(this,\''+esc(vin)+'\')">Copy</button></div>'
     +'</div></article>';
