@@ -30,6 +30,7 @@ main{max-width:1100px;margin:18px auto 60px;padding:0 16px;display:grid;grid-tem
 .card{position:relative;background:#fff;border:1px solid #d8dad5;border-radius:8px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 1px 3px rgba(23,26,30,.08)}
 .card.leased .ph img{filter:grayscale(1) brightness(.8)}
 .card.leased .ymm,.card.leased .model,.card.leased .loc{opacity:.55}
+.card.pending .rib{background:#f5a300;color:#181a1c}
 .rib{position:absolute;top:14px;right:-34px;transform:rotate(38deg);background:repeating-linear-gradient(-45deg,var(--hazard) 0 10px,var(--asphalt) 10px 20px);color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;letter-spacing:.22em;text-transform:uppercase;padding:5px 44px;z-index:3;text-shadow:0 1px 3px rgba(0,0,0,.65);pointer-events:none}
 .ph{position:relative;aspect-ratio:4/3;background:var(--steel);overflow:hidden}
 .ph img{width:100%;height:100%;object-fit:cover;display:block}
@@ -135,8 +136,9 @@ function card(t,idx){
   var vin8=vin.length>8?vin.slice(-8):vin;
   var ymm='<span class="yr">'+esc(t.year||'')+'</span>'+esc(t.make||'');
   var leased=(t.leased===true||t.leased==='true');
-  return '<article class="card'+(leased?' leased':'')+'" data-leased="'+(leased?'1':'0')+'" data-hay="'+esc(((t.year||'')+' '+(t.make||'')+' '+(t.model||'')+' '+(t.state||'')+' '+(t.miles||'')+' '+vin).toLowerCase())+'">'
-    +(leased?'<div class="rib">Leased</div>':'')
+  var pending=!leased&&(t.pending===true||t.pending==='true');
+  return '<article class="card'+(leased?' leased':'')+(pending?' pending':'')+'" data-leased="'+(leased?'1':'0')+'" data-pending="'+(pending?'1':'0')+'" data-hay="'+esc(((t.year||'')+' '+(t.make||'')+' '+(t.model||'')+' '+(t.state||'')+' '+(t.miles||'')+' '+vin).toLowerCase())+'">'
+    +(leased?'<div class="rib">Leased</div>':(pending?'<div class="rib">Pending</div>':''))
     +'<div class="ph" id="ph'+idx+'">'
       +'<div class="none"><svg viewBox="0 0 64 40" fill="none"><path d="M2 30h8l6-14h20v14h10l6-8h8v8h2" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><circle cx="18" cy="32" r="5" stroke="currentColor" stroke-width="2.5"/><circle cx="48" cy="32" r="5" stroke="currentColor" stroke-width="2.5"/></svg>Photos coming soon</div>'
     +'</div>'
@@ -249,9 +251,10 @@ fetch('trucks.json?v='+Date.now()).then(function(r){return r.json();}).then(func
   trucks=Array.isArray(data)?data:[];
   var g=document.getElementById('grid');
   if(!trucks.length){g.innerHTML='<div class="empty">No trucks listed right now &mdash; check back soon.</div>';document.getElementById('n').textContent=0;return;}
-  trucks.sort(function(a,b){return (a.leased===true?1:0)-(b.leased===true?1:0);});
+  function _ord(t){if(t.leased===true||t.leased==='true')return 2;if(t.pending===true||t.pending==='true')return 1;return 0;}
+  trucks.sort(function(a,b){return _ord(a)-_ord(b);});
   g.innerHTML=trucks.map(function(t,i){return card(t,i);}).join('');
-  document.getElementById('n').textContent=trucks.filter(function(t){return t.leased!==true&&t.leased!=='true';}).length;
+  document.getElementById('n').textContent=trucks.filter(function(t){return t.leased!==true&&t.leased!=='true'&&t.pending!==true&&t.pending!=='true';}).length;
   trucks.forEach(function(t,i){loadPhotos(t,i);});
 }).catch(function(){
   document.getElementById('grid').innerHTML='<div class="empty">Could not load trucks.json &mdash; make sure it sits next to this page.</div>';
