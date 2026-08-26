@@ -159,7 +159,8 @@
     "weekly": 534,
     "months": 27,
     "payoff": 90000,
-    "balloon": 27500
+    "balloon": 27500,
+    "pending": true
   },
   {
     "vin": "5PVNJ7AP8S5T50666",
@@ -398,7 +399,8 @@
     "monthly": 2049,
     "weekly": 473,
     "months": 60,
-    "payoff": 99000
+    "payoff": 99000,
+    "pending": true
   },
   {
     "vin": "3HAEUMML5PL529376",
