@@ -221,6 +221,21 @@
     "balloon": 50000
   },
   {
+    "vin": "5PVNJ7BS7S5T50452",
+    "year": 2025,
+    "make": "Hino",
+    "model": "",
+    "state": "Ohio",
+    "miles": "132218",
+    "leased": false,
+    "notes": "",
+    "monthly": 2255,
+    "weekly": 520,
+    "months": 60,
+    "payoff": 125000,
+    "balloon": 25000
+  },
+  {
     "vin": "5PVNJ7BT1R5T50093",
     "year": 2024,
     "make": "Hino",
@@ -229,11 +244,11 @@
     "miles": "149522",
     "leased": false,
     "notes": "",
-    "monthly": 2466,
-    "weekly": 569,
+    "monthly": 2333,
+    "weekly": 538,
     "months": 60,
     "payoff": 135000,
-    "balloon": 25000
+    "balloon": 35000
   },
   {
     "vin": "5PVNJ7BT4S5T50305",
@@ -295,6 +310,21 @@
     "months": 60,
     "payoff": 111000,
     "balloon": 25000
+  },
+  {
+    "vin": "3HAEUMML0SL329062",
+    "year": 2025,
+    "make": "International",
+    "model": "",
+    "state": "Massachusetts",
+    "miles": "90912",
+    "leased": false,
+    "notes": "",
+    "monthly": 2395,
+    "weekly": 553,
+    "months": 60,
+    "payoff": 147000,
+    "balloon": 50000
   },
   {
     "vin": "3HAEUMML1PL562441",
@@ -635,11 +665,11 @@
     "miles": "119241",
     "leased": false,
     "notes": "",
-    "monthly": 2841,
-    "weekly": 656,
+    "monthly": 2244,
+    "weekly": 518,
     "months": 60,
     "payoff": 140000,
-    "balloon": 5000
+    "balloon": 50000
   },
   {
     "vin": "1M2MDBAAXRS011836",
