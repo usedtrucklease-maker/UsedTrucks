@@ -510,7 +510,8 @@
     "monthly": 2146,
     "weekly": 495,
     "months": 60,
-    "payoff": 103000
+    "payoff": 103000,
+    "pending": true
   },
   {
     "vin": "3HAEUMML9PL522320",
