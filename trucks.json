@@ -92,7 +92,7 @@
     "year": 2024,
     "make": "Hino",
     "model": "",
-    "state": "Pennslyvania",
+    "state": "Michigan",
     "miles": "103834",
     "leased": false,
     "notes": "",
@@ -765,7 +765,8 @@
     "monthly": 2297,
     "weekly": 530,
     "months": 33,
-    "payoff": 70000
+    "payoff": 70000,
+    "pending": true
   },
   {
     "vin": "3HAEUMML7RL622788",
@@ -928,7 +929,8 @@
     "weekly": 403,
     "months": 60,
     "payoff": 100000,
-    "balloon": 25000
+    "balloon": 25000,
+    "pending": true
   },
   {
     "vin": "2NKHLJ9X0KM283150",
