@@ -421,7 +421,7 @@
     "months": 60,
     "payoff": 149000,
     "balloon": 50000,
-    "coming": true
+    "pending": true
   },
   {
     "vin": "5PVNJ7BT4S5T50305",
@@ -943,6 +943,21 @@
     "weekly": 342,
     "months": 60,
     "payoff": 71000
+  },
+  {
+    "vin": "2NKHLJ9X2MM456198",
+    "year": 2021,
+    "make": "Kenworth",
+    "model": "",
+    "state": "Texas",
+    "miles": "200664",
+    "leased": false,
+    "notes": "",
+    "monthly": 480,
+    "weekly": 111,
+    "months": 60,
+    "payoff": 23000,
+    "pending": true
   },
   {
     "vin": "2NKHLJ9X6MM456205",
