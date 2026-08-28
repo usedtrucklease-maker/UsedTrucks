@@ -45,6 +45,20 @@
     "payoff": 94000
   },
   {
+    "vin": "5PVNJ7AN2P5T50457",
+    "year": 2023,
+    "make": "Hino",
+    "model": "",
+    "state": "Texas",
+    "miles": "97913",
+    "leased": false,
+    "notes": "",
+    "monthly": 2247,
+    "weekly": 519,
+    "months": 60,
+    "payoff": 108000
+  },
+  {
     "vin": "5PVNJ7AN3P5T50466",
     "year": 2023,
     "make": "Hino",
@@ -152,6 +166,20 @@
     "pending": true
   },
   {
+    "vin": "5PVNJ7AN9P5T50472",
+    "year": 2023,
+    "make": "Hino",
+    "model": "",
+    "state": "Florida ",
+    "miles": "56348",
+    "leased": false,
+    "notes": "",
+    "monthly": 2303,
+    "weekly": 531,
+    "months": 60,
+    "payoff": 111000
+  },
+  {
     "vin": "5PVNJ7ANXP5T50223",
     "year": 2023,
     "make": "Hino",
@@ -242,6 +270,21 @@
     "pending": true
   },
   {
+    "vin": "5PVNJ7AP9S5T50613",
+    "year": 2025,
+    "make": "Hino",
+    "model": "",
+    "state": "Ohio",
+    "miles": "6174",
+    "leased": false,
+    "notes": "",
+    "monthly": 2945,
+    "weekly": 680,
+    "months": 60,
+    "payoff": 142000,
+    "pending": true
+  },
+  {
     "vin": "5PVNJ7APXR5T50288",
     "year": 2024,
     "make": "Hino",
@@ -284,7 +327,8 @@
     "weekly": 539,
     "months": 60,
     "payoff": 144000,
-    "balloon": 50000
+    "balloon": 50000,
+    "pending": true
   },
   {
     "vin": "5PVNJ7BS2R5T50398",
@@ -330,8 +374,7 @@
     "weekly": 524,
     "months": 60,
     "payoff": 125000,
-    "balloon": 25000,
-    "coming": true
+    "balloon": 25000
   },
   {
     "vin": "5PVNJ7BT1R5T50093",
@@ -458,6 +501,20 @@
     "payoff": 114000,
     "balloon": 25000,
     "coming": true
+  },
+  {
+    "vin": "1HTEUMML1SS172764",
+    "year": 2025,
+    "make": "International",
+    "model": "",
+    "state": "Illinois",
+    "miles": "160984",
+    "leased": false,
+    "notes": "",
+    "monthly": 2609,
+    "weekly": 602,
+    "months": 60,
+    "payoff": 126000
   },
   {
     "vin": "1HTEUMML8SS176360",
