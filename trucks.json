@@ -59,6 +59,21 @@
     "payoff": 108000
   },
   {
+    "vin": "5PVNJ7AN3P5T50435",
+    "year": 2023,
+    "make": "Hino",
+    "model": "",
+    "state": "Maryland",
+    "miles": "63458",
+    "leased": false,
+    "notes": "",
+    "monthly": 2110,
+    "weekly": 487,
+    "months": 60,
+    "payoff": 102000,
+    "coming": true
+  },
+  {
     "vin": "5PVNJ7AN3P5T50466",
     "year": 2023,
     "make": "Hino",
@@ -71,6 +86,21 @@
     "weekly": 443,
     "months": 60,
     "payoff": 93000
+  },
+  {
+    "vin": "5PVNJ7AN4R5T50852",
+    "year": 2024,
+    "make": "Hino",
+    "model": "",
+    "state": "North Carolina",
+    "miles": "181243",
+    "leased": false,
+    "notes": "",
+    "monthly": 2171,
+    "weekly": 501,
+    "months": 60,
+    "payoff": 105000,
+    "coming": true
   },
   {
     "vin": "5PVNJ7AN4S5T51022",
@@ -92,7 +122,7 @@
     "year": 2024,
     "make": "Hino",
     "model": "",
-    "state": "Michigan",
+    "state": "Pennslyvania",
     "miles": "103834",
     "leased": false,
     "notes": "",
@@ -149,6 +179,22 @@
     "payoff": 99000,
     "balloon": 27000,
     "pending": true
+  },
+  {
+    "vin": "5PVNJ7AN8R5T50840",
+    "year": 2024,
+    "make": "Hino",
+    "model": "",
+    "state": "Texas",
+    "miles": "70328",
+    "leased": false,
+    "notes": "",
+    "monthly": 2311,
+    "weekly": 533,
+    "months": 60,
+    "payoff": 143000,
+    "balloon": 50000,
+    "coming": true
   },
   {
     "vin": "5PVNJ7AN9P5T50469",
@@ -503,6 +549,21 @@
     "coming": true
   },
   {
+    "vin": "1HTEUMML1SS111012",
+    "year": 2025,
+    "make": "International",
+    "model": "",
+    "state": "Illinois",
+    "miles": "59240",
+    "leased": false,
+    "notes": "",
+    "monthly": 2654,
+    "weekly": 613,
+    "months": 60,
+    "payoff": 128000,
+    "coming": true
+  },
+  {
     "vin": "1HTEUMML1SS172764",
     "year": 2025,
     "make": "International",
@@ -529,8 +590,7 @@
     "weekly": 493,
     "months": 60,
     "payoff": 119000,
-    "balloon": 25000,
-    "coming": true
+    "balloon": 25000
   },
   {
     "vin": "1HTEUMML9SS229826",
@@ -765,8 +825,7 @@
     "monthly": 2297,
     "weekly": 530,
     "months": 33,
-    "payoff": 70000,
-    "pending": true
+    "payoff": 70000
   },
   {
     "vin": "3HAEUMML7RL622788",
@@ -781,7 +840,7 @@
     "weekly": 557,
     "months": 34,
     "payoff": 99000,
-    "coming": true
+    "pending": true
   },
   {
     "vin": "3HAEUMML8PL556510",
@@ -990,6 +1049,20 @@
     "payoff": 40000
   },
   {
+    "vin": "1M2MDBAA4RS011816",
+    "year": 2024,
+    "make": "Mack",
+    "model": "",
+    "state": "Albuquerque, NM",
+    "miles": "130001",
+    "leased": false,
+    "notes": "",
+    "monthly": 2690,
+    "weekly": 621,
+    "months": 60,
+    "payoff": 130000
+  },
+  {
     "vin": "1M2MDBAA4RS014781",
     "year": 2024,
     "make": "Mack",
@@ -1032,8 +1105,7 @@
     "weekly": 507,
     "months": 60,
     "payoff": 122000,
-    "balloon": 25000,
-    "coming": true
+    "balloon": 25000
   },
   {
     "vin": "1M2MDBAAXRS011836",
