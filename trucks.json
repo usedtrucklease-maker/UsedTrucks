@@ -976,6 +976,21 @@
     "pending": true
   },
   {
+    "vin": "2NK5LJ9X0PM258033",
+    "year": 2023,
+    "make": "Kenworth",
+    "model": "",
+    "state": "Alabama",
+    "miles": "200523",
+    "leased": false,
+    "notes": "",
+    "monthly": 866,
+    "weekly": 200,
+    "months": 60,
+    "payoff": 42000,
+    "pending": true
+  },
+  {
     "vin": "2NKHHM6X2NM149090",
     "year": 2022,
     "make": "Kenworth",
