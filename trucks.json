@@ -27,8 +27,7 @@
     "monthly": 1938,
     "weekly": 447,
     "months": 60,
-    "payoff": 93000,
-    "coming": true
+    "payoff": 93000
   },
   {
     "vin": "5PVNJ7AN1R5T50677",
@@ -70,8 +69,7 @@
     "monthly": 2110,
     "weekly": 487,
     "months": 60,
-    "payoff": 102000,
-    "coming": true
+    "payoff": 102000
   },
   {
     "vin": "5PVNJ7AN3P5T50466",
@@ -99,8 +97,7 @@
     "monthly": 2171,
     "weekly": 501,
     "months": 60,
-    "payoff": 105000,
-    "coming": true
+    "payoff": 105000
   },
   {
     "vin": "5PVNJ7AN4S5T51022",
@@ -145,8 +142,7 @@
     "weekly": 539,
     "months": 60,
     "payoff": 129000,
-    "balloon": 25000,
-    "coming": true
+    "balloon": 25000
   },
   {
     "vin": "5PVNJ7AN7R5T50845",
@@ -161,8 +157,7 @@
     "weekly": 493,
     "months": 60,
     "payoff": 113000,
-    "balloon": 15000,
-    "coming": true
+    "balloon": 15000
   },
   {
     "vin": "5PVNJ7AN8R5T50806",
@@ -193,8 +188,7 @@
     "weekly": 533,
     "months": 60,
     "payoff": 143000,
-    "balloon": 50000,
-    "coming": true
+    "balloon": 50000
   },
   {
     "vin": "5PVNJ7AN9P5T50469",
@@ -374,8 +368,7 @@
     "weekly": 539,
     "months": 60,
     "payoff": 144000,
-    "balloon": 50000,
-    "pending": true
+    "balloon": 50000
   },
   {
     "vin": "5PVNJ7BS2R5T50398",
@@ -551,21 +544,6 @@
     "coming": true
   },
   {
-    "vin": "1HTEUMML1SS111012",
-    "year": 2025,
-    "make": "International",
-    "model": "",
-    "state": "Illinois",
-    "miles": "59240",
-    "leased": false,
-    "notes": "",
-    "monthly": 2654,
-    "weekly": 613,
-    "months": 60,
-    "payoff": 128000,
-    "coming": true
-  },
-  {
     "vin": "1HTEUMML1SS172764",
     "year": 2025,
     "make": "International",
@@ -616,7 +594,7 @@
     "year": 2023,
     "make": "International",
     "model": "",
-    "state": "Illinois",
+    "state": "Kentucky",
     "miles": "141029",
     "leased": false,
     "notes": "",
@@ -647,7 +625,7 @@
     "year": 2025,
     "make": "International",
     "model": "",
-    "state": "Massachusetts",
+    "state": "New York",
     "miles": "90912",
     "leased": false,
     "notes": "",
@@ -662,7 +640,7 @@
     "year": 2023,
     "make": "International",
     "model": "",
-    "state": "Georgia",
+    "state": "Warner Robins, GA",
     "miles": "179943",
     "leased": false,
     "notes": "",
@@ -734,7 +712,7 @@
     "year": 2023,
     "make": "International",
     "model": "",
-    "state": "Missouri",
+    "state": "Kentucky",
     "miles": "170549",
     "leased": false,
     "notes": "",
@@ -864,7 +842,7 @@
     "year": 2023,
     "make": "International",
     "model": "",
-    "state": "Utah",
+    "state": "Riverton, UT",
     "miles": "122508",
     "leased": false,
     "notes": "",
@@ -987,10 +965,10 @@
     "miles": "200523",
     "leased": false,
     "notes": "",
-    "monthly": 1183,
-    "weekly": 273,
+    "monthly": 866,
+    "weekly": 200,
     "months": 60,
-    "payoff": 57000,
+    "payoff": 42000,
     "pending": true
   },
   {
@@ -998,7 +976,7 @@
     "year": 2022,
     "make": "Kenworth",
     "model": "",
-    "state": "Alabama",
+    "state": "Michigan",
     "miles": "108002",
     "leased": false,
     "notes": "",
@@ -1006,8 +984,7 @@
     "weekly": 403,
     "months": 60,
     "payoff": 100000,
-    "balloon": 25000,
-    "pending": true
+    "balloon": 25000
   },
   {
     "vin": "2NKHLJ9X0KM283150",
@@ -1068,25 +1045,11 @@
     "payoff": 40000
   },
   {
-    "vin": "1M2MDBAA4RS011816",
-    "year": 2024,
-    "make": "Mack",
-    "model": "",
-    "state": "Albuquerque, NM",
-    "miles": "130001",
-    "leased": false,
-    "notes": "",
-    "monthly": 2690,
-    "weekly": 621,
-    "months": 60,
-    "payoff": 130000
-  },
-  {
     "vin": "1M2MDBAA4RS014781",
     "year": 2024,
     "make": "Mack",
     "model": "",
-    "state": "Minnesota",
+    "state": "South Dakota",
     "miles": "140399",
     "leased": false,
     "notes": "",
