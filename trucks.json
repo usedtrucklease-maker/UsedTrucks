@@ -984,10 +984,10 @@
     "miles": "200523",
     "leased": false,
     "notes": "",
-    "monthly": 866,
-    "weekly": 200,
+    "monthly": 1183,
+    "weekly": 273,
     "months": 60,
-    "payoff": 42000,
+    "payoff": 57000,
     "pending": true
   },
   {
