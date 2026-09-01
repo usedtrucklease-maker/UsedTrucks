@@ -223,7 +223,8 @@
     "monthly": 2303,
     "weekly": 531,
     "months": 60,
-    "payoff": 111000
+    "payoff": 111000,
+    "pending": true
   },
   {
     "vin": "5PVNJ7ANXP5T50223",
@@ -1020,7 +1021,8 @@
     "monthly": 1484,
     "weekly": 342,
     "months": 60,
-    "payoff": 71000
+    "payoff": 71000,
+    "pending": true
   },
   {
     "vin": "2NKHLJ9X2MM456198",
