@@ -129,8 +129,7 @@
     "weekly": 493,
     "months": 60,
     "payoff": 113000,
-    "balloon": 15000,
-    "coming": true
+    "balloon": 15000
   },
   {
     "vin": "5PVNJ7AN8R5T50840",
@@ -364,7 +363,7 @@
     "year": 2023,
     "make": "International",
     "model": "",
-    "state": "Warner Robins, GA",
+    "state": "Georgia",
     "miles": "179943",
     "leased": false,
     "notes": "",
