@@ -207,37 +207,6 @@
     "coming": true
   },
   {
-    "vin": "5PVNJ7APXR5T50436",
-    "year": 2024,
-    "make": "Hino",
-    "model": "",
-    "state": "New Mexico",
-    "miles": "65175",
-    "leased": false,
-    "notes": "",
-    "monthly": 2323,
-    "weekly": 536,
-    "months": 60,
-    "payoff": 144000,
-    "balloon": 50000,
-    "pending": true
-  },
-  {
-    "vin": "5PVNJ7BS2R5T50367",
-    "year": 2024,
-    "make": "Hino",
-    "model": "",
-    "state": "Texas",
-    "miles": "106420",
-    "leased": false,
-    "notes": "",
-    "monthly": 2531,
-    "weekly": 584,
-    "months": 60,
-    "payoff": 122000,
-    "pending": true
-  },
-  {
     "vin": "5PVNJ7BS2R5T50398",
     "year": 2024,
     "make": "Hino",
@@ -252,22 +221,6 @@
     "payoff": 144000,
     "balloon": 50000,
     "coming": true
-  },
-  {
-    "vin": "5PVNJ7BS7S5T50452",
-    "year": 2025,
-    "make": "Hino",
-    "model": "",
-    "state": "Ohio",
-    "miles": "132218",
-    "leased": false,
-    "notes": "",
-    "monthly": 2255,
-    "weekly": 520,
-    "months": 60,
-    "payoff": 125000,
-    "balloon": 25000,
-    "pending": true
   },
   {
     "vin": "5PVNJ7BT1R5T50093",
@@ -301,22 +254,6 @@
     "coming": true
   },
   {
-    "vin": "5PVNJ7BT4S5T50305",
-    "year": 2025,
-    "make": "Hino",
-    "model": "",
-    "state": "New Mexico",
-    "miles": "70390",
-    "leased": false,
-    "notes": "",
-    "monthly": 2446,
-    "weekly": 565,
-    "months": 60,
-    "payoff": 150000,
-    "balloon": 50000,
-    "pending": true
-  },
-  {
     "vin": "5PVNJ7BT6R5T50140",
     "year": 2024,
     "make": "Hino",
@@ -330,22 +267,6 @@
     "months": 60,
     "payoff": 112000,
     "balloon": 25000
-  },
-  {
-    "vin": "1HTEUMML0PS649143",
-    "year": 2023,
-    "make": "International",
-    "model": "",
-    "state": "Oregon",
-    "miles": "146477",
-    "leased": false,
-    "notes": "",
-    "monthly": 2467,
-    "weekly": 569,
-    "months": 22,
-    "payoff": 82000,
-    "balloon": 27500,
-    "pending": true
   },
   {
     "vin": "1HTEUMML1PS528945",
@@ -443,15 +364,14 @@
     "year": 2023,
     "make": "International",
     "model": "",
-    "state": "Georgia",
+    "state": "Warner Robins, GA",
     "miles": "179943",
     "leased": false,
     "notes": "",
     "monthly": 1903,
     "weekly": 439,
     "months": 60,
-    "payoff": 92000,
-    "pending": true
+    "payoff": 92000
   },
   {
     "vin": "3HAEUMML2PL514334",
@@ -510,21 +430,6 @@
     "weekly": 413,
     "months": 60,
     "payoff": 86000
-  },
-  {
-    "vin": "3HAEUMML4PL568556",
-    "year": 2023,
-    "make": "International",
-    "model": "",
-    "state": "Indianapolis, IN ",
-    "miles": "170549",
-    "leased": false,
-    "notes": "",
-    "monthly": 2049,
-    "weekly": 473,
-    "months": 60,
-    "payoff": 99000,
-    "pending": true
   },
   {
     "vin": "3HAEUMML5PL567951",
@@ -626,8 +531,7 @@
     "weekly": 435,
     "months": 60,
     "payoff": 107000,
-    "balloon": 25000,
-    "pending": true
+    "balloon": 25000
   },
   {
     "vin": "3HAEUMML9RL718972",
