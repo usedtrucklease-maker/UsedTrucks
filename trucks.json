@@ -1,21 +1,5 @@
 [
   {
-    "vin": "1FVACWFC3PHUC8933",
-    "year": 2023,
-    "make": "Freightliner",
-    "model": "",
-    "state": "Kentucky",
-    "miles": "122724",
-    "leased": false,
-    "notes": "",
-    "monthly": 2207,
-    "weekly": 509,
-    "months": 18,
-    "payoff": 65000,
-    "balloon": 25500,
-    "pending": true
-  },
-  {
     "vin": "1FVACWFCXPHNX2838",
     "year": 2023,
     "make": "Freightliner",
@@ -133,22 +117,6 @@
     "balloon": 25000
   },
   {
-    "vin": "5PVNJ7AN5S5T51028",
-    "year": 2025,
-    "make": "Hino",
-    "model": "",
-    "state": "Ohio",
-    "miles": "56011",
-    "leased": false,
-    "notes": "",
-    "monthly": 2336,
-    "weekly": 539,
-    "months": 60,
-    "payoff": 129000,
-    "balloon": 25000,
-    "pending": true
-  },
-  {
     "vin": "5PVNJ7AN7R5T50845",
     "year": 2024,
     "make": "Hino",
@@ -163,22 +131,6 @@
     "payoff": 113000,
     "balloon": 15000,
     "coming": true
-  },
-  {
-    "vin": "5PVNJ7AN8R5T50806",
-    "year": 2024,
-    "make": "Hino",
-    "model": "",
-    "state": "Texas",
-    "miles": "55436",
-    "leased": false,
-    "notes": "",
-    "monthly": 2241,
-    "weekly": 517,
-    "months": 32,
-    "payoff": 99000,
-    "balloon": 27000,
-    "pending": true
   },
   {
     "vin": "5PVNJ7AN8R5T50840",
@@ -211,21 +163,6 @@
     "payoff": 99000
   },
   {
-    "vin": "5PVNJ7AN9P5T50472",
-    "year": 2023,
-    "make": "Hino",
-    "model": "",
-    "state": "Florida ",
-    "miles": "56348",
-    "leased": false,
-    "notes": "",
-    "monthly": 2303,
-    "weekly": 531,
-    "months": 60,
-    "payoff": 111000,
-    "pending": true
-  },
-  {
     "vin": "5PVNJ7ANXP5T50223",
     "year": 2023,
     "make": "Hino",
@@ -254,37 +191,6 @@
     "payoff": 75000
   },
   {
-    "vin": "5PVNJ7ANXP5T50495",
-    "year": 2023,
-    "make": "Hino",
-    "model": "",
-    "state": "Missouri",
-    "miles": "118236",
-    "leased": false,
-    "notes": "",
-    "monthly": 1936,
-    "weekly": 447,
-    "months": 60,
-    "payoff": 93000,
-    "pending": true
-  },
-  {
-    "vin": "5PVNJ7AP0P5T50183",
-    "year": 2023,
-    "make": "Hino",
-    "model": "",
-    "state": "Ohio",
-    "miles": "73209",
-    "leased": false,
-    "notes": "",
-    "monthly": 2313,
-    "weekly": 534,
-    "months": 27,
-    "payoff": 90000,
-    "balloon": 27500,
-    "pending": true
-  },
-  {
     "vin": "5PVNJ7AP5R5T50327",
     "year": 2024,
     "make": "Hino",
@@ -301,52 +207,6 @@
     "coming": true
   },
   {
-    "vin": "5PVNJ7AP8S5T50666",
-    "year": 2025,
-    "make": "Hino",
-    "model": "",
-    "state": "Florida",
-    "miles": "97843",
-    "leased": false,
-    "notes": "",
-    "monthly": 2308,
-    "weekly": 533,
-    "months": 60,
-    "payoff": 127000,
-    "balloon": 25000,
-    "pending": true
-  },
-  {
-    "vin": "5PVNJ7AP9S5T50613",
-    "year": 2025,
-    "make": "Hino",
-    "model": "",
-    "state": "Ohio",
-    "miles": "6174",
-    "leased": false,
-    "notes": "",
-    "monthly": 2945,
-    "weekly": 680,
-    "months": 60,
-    "payoff": 142000,
-    "pending": true
-  },
-  {
-    "vin": "5PVNJ7APXR5T50288",
-    "year": 2024,
-    "make": "Hino",
-    "model": "",
-    "state": "Delaware",
-    "miles": "134230",
-    "leased": false,
-    "notes": "",
-    "monthly": 1839,
-    "weekly": 424,
-    "months": 60,
-    "payoff": 89000,
-    "pending": true
-  },
-  {
     "vin": "5PVNJ7APXR5T50436",
     "year": 2024,
     "make": "Hino",
@@ -359,22 +219,22 @@
     "weekly": 536,
     "months": 60,
     "payoff": 144000,
-    "balloon": 50000
+    "balloon": 50000,
+    "pending": true
   },
   {
-    "vin": "5PVNJ7BS1R5T50361",
+    "vin": "5PVNJ7BS2R5T50367",
     "year": 2024,
     "make": "Hino",
     "model": "",
-    "state": "California",
-    "miles": "70950",
+    "state": "Texas",
+    "miles": "106420",
     "leased": false,
     "notes": "",
-    "monthly": 2335,
-    "weekly": 539,
+    "monthly": 2531,
+    "weekly": 584,
     "months": 60,
-    "payoff": 144000,
-    "balloon": 50000,
+    "payoff": 122000,
     "pending": true
   },
   {
@@ -383,7 +243,7 @@
     "make": "Hino",
     "model": "",
     "state": "Albuquerque, NM",
-    "miles": "98516",
+    "miles": "98517",
     "leased": false,
     "notes": "",
     "monthly": 2323,
@@ -404,21 +264,6 @@
     "notes": "",
     "monthly": 2255,
     "weekly": 520,
-    "months": 60,
-    "payoff": 125000,
-    "balloon": 25000
-  },
-  {
-    "vin": "5PVNJ7BSXR5T50276",
-    "year": 2024,
-    "make": "Hino",
-    "model": "",
-    "state": "Connecticut",
-    "miles": "59319",
-    "leased": false,
-    "notes": "",
-    "monthly": 2273,
-    "weekly": 524,
     "months": 60,
     "payoff": 125000,
     "balloon": 25000,
@@ -456,22 +301,6 @@
     "coming": true
   },
   {
-    "vin": "5PVNJ7BT3S5T50392",
-    "year": 2025,
-    "make": "Hino",
-    "model": "",
-    "state": "Georgia",
-    "miles": "30177",
-    "leased": false,
-    "notes": "",
-    "monthly": 2426,
-    "weekly": 560,
-    "months": 60,
-    "payoff": 149000,
-    "balloon": 50000,
-    "pending": true
-  },
-  {
     "vin": "5PVNJ7BT4S5T50305",
     "year": 2025,
     "make": "Hino",
@@ -501,22 +330,6 @@
     "months": 60,
     "payoff": 112000,
     "balloon": 25000
-  },
-  {
-    "vin": "5PVNJ7BT9S5T50185",
-    "year": 2025,
-    "make": "Hino",
-    "model": "",
-    "state": "North Carolina",
-    "miles": "65240",
-    "leased": false,
-    "notes": "",
-    "monthly": 2407,
-    "weekly": 556,
-    "months": 60,
-    "payoff": 148000,
-    "balloon": 50000,
-    "pending": true
   },
   {
     "vin": "1HTEUMML0PS649143",
@@ -580,22 +393,6 @@
     "payoff": 126000
   },
   {
-    "vin": "1HTEUMML8SS176360",
-    "year": 2025,
-    "make": "International",
-    "model": "",
-    "state": "North Carolina",
-    "miles": "140517",
-    "leased": false,
-    "notes": "",
-    "monthly": 2136,
-    "weekly": 493,
-    "months": 60,
-    "payoff": 119000,
-    "balloon": 25000,
-    "pending": true
-  },
-  {
     "vin": "1HTEUMML9SS229826",
     "year": 2025,
     "make": "International",
@@ -632,7 +429,7 @@
     "make": "International",
     "model": "",
     "state": "Massachusetts",
-    "miles": "90912",
+    "miles": "90913",
     "leased": false,
     "notes": "",
     "monthly": 2395,
@@ -653,7 +450,8 @@
     "monthly": 1903,
     "weekly": 439,
     "months": 60,
-    "payoff": 92000
+    "payoff": 92000,
+    "pending": true
   },
   {
     "vin": "3HAEUMML2PL514334",
@@ -718,7 +516,7 @@
     "year": 2023,
     "make": "International",
     "model": "",
-    "state": "Missouri",
+    "state": "Indianapolis, IN ",
     "miles": "170549",
     "leased": false,
     "notes": "",
@@ -726,21 +524,6 @@
     "weekly": 473,
     "months": 60,
     "payoff": 99000,
-    "pending": true
-  },
-  {
-    "vin": "3HAEUMML5PL529376",
-    "year": 2023,
-    "make": "International",
-    "model": "",
-    "state": "South Carolina",
-    "miles": "178926",
-    "leased": false,
-    "notes": "",
-    "monthly": 1995,
-    "weekly": 460,
-    "months": 60,
-    "payoff": 96000,
     "pending": true
   },
   {
@@ -802,35 +585,6 @@
     "coming": true
   },
   {
-    "vin": "3HAEUMML7PL529508",
-    "year": 2023,
-    "make": "International",
-    "model": "",
-    "state": "Oregon",
-    "miles": "141585",
-    "leased": false,
-    "notes": "",
-    "monthly": 2297,
-    "weekly": 530,
-    "months": 33,
-    "payoff": 70000
-  },
-  {
-    "vin": "3HAEUMML7RL622788",
-    "year": 2024,
-    "make": "International",
-    "model": "",
-    "state": "California",
-    "miles": "103052",
-    "leased": false,
-    "notes": "",
-    "monthly": 2415,
-    "weekly": 557,
-    "months": 34,
-    "payoff": 99000,
-    "pending": true
-  },
-  {
     "vin": "3HAEUMML8PL556510",
     "year": 2023,
     "make": "International",
@@ -839,10 +593,10 @@
     "miles": "229760",
     "leased": false,
     "notes": "",
-    "monthly": 1661,
-    "weekly": 383,
+    "monthly": 1606,
+    "weekly": 371,
     "months": 60,
-    "payoff": 80000
+    "payoff": 77000
   },
   {
     "vin": "3HAEUMML8PL567166",
@@ -860,21 +614,6 @@
     "balloon": 25000
   },
   {
-    "vin": "3HAEUMML8RL310687",
-    "year": 2024,
-    "make": "International",
-    "model": "",
-    "state": "Tennesse",
-    "miles": "168269",
-    "leased": false,
-    "notes": "",
-    "monthly": 2146,
-    "weekly": 495,
-    "months": 60,
-    "payoff": 103000,
-    "pending": true
-  },
-  {
     "vin": "3HAEUMML9PL522320",
     "year": 2023,
     "make": "International",
@@ -887,7 +626,8 @@
     "weekly": 435,
     "months": 60,
     "payoff": 107000,
-    "balloon": 25000
+    "balloon": 25000,
+    "pending": true
   },
   {
     "vin": "3HAEUMML9RL718972",
@@ -926,10 +666,10 @@
     "miles": "210813",
     "leased": false,
     "notes": "",
-    "monthly": 1557,
-    "weekly": 359,
+    "monthly": 1398,
+    "weekly": 323,
     "months": 60,
-    "payoff": 75000
+    "payoff": 67000
   },
   {
     "vin": "2NK3HM6X0SM387218",
@@ -946,83 +686,6 @@
     "payoff": 148000,
     "balloon": 50000,
     "coming": true
-  },
-  {
-    "vin": "2NK3HM6X1SM154139",
-    "year": 2025,
-    "make": "Kenworth",
-    "model": "",
-    "state": "Texas",
-    "miles": "8210",
-    "leased": false,
-    "notes": "",
-    "monthly": 2565,
-    "weekly": 592,
-    "months": 60,
-    "payoff": 171000,
-    "balloon": 75000,
-    "pending": true
-  },
-  {
-    "vin": "2NK5LJ9X0PM258033",
-    "year": 2023,
-    "make": "Kenworth",
-    "model": "",
-    "state": "Alabama",
-    "miles": "200523",
-    "leased": false,
-    "notes": "",
-    "monthly": 1183,
-    "weekly": 273,
-    "months": 60,
-    "payoff": 57000,
-    "pending": true
-  },
-  {
-    "vin": "2NKHHM6X2NM149090",
-    "year": 2022,
-    "make": "Kenworth",
-    "model": "",
-    "state": "Alabama",
-    "miles": "108002",
-    "leased": false,
-    "notes": "",
-    "monthly": 1744,
-    "weekly": 403,
-    "months": 60,
-    "payoff": 100000,
-    "balloon": 25000,
-    "pending": true
-  },
-  {
-    "vin": "2NKHLJ9X0KM283150",
-    "year": 2019,
-    "make": "Kenworth",
-    "model": "",
-    "state": "Oklahoma",
-    "miles": "245198",
-    "leased": false,
-    "notes": "",
-    "monthly": 1484,
-    "weekly": 342,
-    "months": 60,
-    "payoff": 71000,
-    "pending": true
-  },
-  {
-    "vin": "2NKHLJ9X2MM456198",
-    "year": 2021,
-    "make": "Kenworth",
-    "model": "",
-    "state": "Texas",
-    "miles": "200664",
-    "leased": false,
-    "notes": "",
-    "monthly": 480,
-    "weekly": 111,
-    "months": 60,
-    "payoff": 23000,
-    "pending": true
   },
   {
     "vin": "2NKHLJ9X6MM456205",
@@ -1087,7 +750,7 @@
     "make": "Mack",
     "model": "",
     "state": "Texas",
-    "miles": "119241",
+    "miles": "119247",
     "leased": false,
     "notes": "",
     "monthly": 2244,
@@ -1095,22 +758,6 @@
     "months": 60,
     "payoff": 140000,
     "balloon": 50000
-  },
-  {
-    "vin": "1M2MDBAA7RS011812",
-    "year": 2024,
-    "make": "Mack",
-    "model": "",
-    "state": "Wyoming",
-    "miles": "93467",
-    "leased": false,
-    "notes": "",
-    "monthly": 2198,
-    "weekly": 507,
-    "months": 60,
-    "payoff": 122000,
-    "balloon": 25000,
-    "pending": true
   },
   {
     "vin": "1M2MDBAAXRS011836",
