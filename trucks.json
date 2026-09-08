@@ -137,7 +137,7 @@
     "make": "Hino",
     "model": "",
     "state": "Texas",
-    "miles": "70328",
+    "miles": "70329",
     "leased": false,
     "notes": "",
     "monthly": 2311,
@@ -203,22 +203,6 @@
     "months": 60,
     "payoff": 117000,
     "balloon": 25000,
-    "coming": true
-  },
-  {
-    "vin": "5PVNJ7BS2R5T50398",
-    "year": 2024,
-    "make": "Hino",
-    "model": "",
-    "state": "Albuquerque, NM",
-    "miles": "98517",
-    "leased": false,
-    "notes": "",
-    "monthly": 2323,
-    "weekly": 536,
-    "months": 60,
-    "payoff": 144000,
-    "balloon": 50000,
     "coming": true
   },
   {
@@ -348,7 +332,7 @@
     "year": 2025,
     "make": "International",
     "model": "",
-    "state": "Massachusetts",
+    "state": "New York",
     "miles": "90913",
     "leased": false,
     "notes": "",
@@ -603,6 +587,20 @@
     "weekly": 287,
     "months": 60,
     "payoff": 60000
+  },
+  {
+    "vin": "2NKHLJ9X8MM456240",
+    "year": 2021,
+    "make": "Kenworth",
+    "model": "",
+    "state": "New York ",
+    "miles": "186496",
+    "leased": false,
+    "notes": "",
+    "monthly": 1569,
+    "weekly": 362,
+    "months": 60,
+    "payoff": 76000
   },
   {
     "vin": "2NKHLJ9X9MM456229",
