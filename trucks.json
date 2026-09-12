@@ -37,10 +37,11 @@
     "miles": "97913",
     "leased": false,
     "notes": "",
-    "monthly": 2247,
-    "weekly": 519,
+    "monthly": 1916,
+    "weekly": 442,
     "months": 60,
-    "payoff": 108000
+    "payoff": 108000,
+    "balloon": 25000
   },
   {
     "vin": "5PVNJ7AN3P5T50435",
@@ -56,20 +57,6 @@
     "months": 60,
     "payoff": 102000,
     "coming": true
-  },
-  {
-    "vin": "5PVNJ7AN3P5T50466",
-    "year": 2023,
-    "make": "Hino",
-    "model": "",
-    "state": "Alabama",
-    "miles": "193399",
-    "leased": false,
-    "notes": "",
-    "monthly": 1922,
-    "weekly": 443,
-    "months": 60,
-    "payoff": 93000
   },
   {
     "vin": "5PVNJ7AN4R5T50852",
@@ -117,6 +104,20 @@
     "balloon": 25000
   },
   {
+    "vin": "5PVNJ7AN7P5T50244",
+    "year": 2023,
+    "make": "Hino",
+    "model": "",
+    "state": "California",
+    "miles": "127517",
+    "leased": false,
+    "notes": "",
+    "monthly": 1241,
+    "weekly": 286,
+    "months": 60,
+    "payoff": 60000
+  },
+  {
     "vin": "5PVNJ7AN7R5T50845",
     "year": 2024,
     "make": "Hino",
@@ -125,11 +126,25 @@
     "miles": "83479",
     "leased": false,
     "notes": "",
-    "monthly": 2138,
-    "weekly": 493,
+    "monthly": 2005,
+    "weekly": 463,
     "months": 60,
     "payoff": 113000,
-    "balloon": 15000
+    "balloon": 25000
+  },
+  {
+    "vin": "5PVNJ7AN8P5T50236",
+    "year": 2023,
+    "make": "Hino",
+    "model": "",
+    "state": "Georgia",
+    "miles": "158113",
+    "leased": false,
+    "notes": "",
+    "monthly": 1938,
+    "weekly": 447,
+    "months": 60,
+    "payoff": 93000
   },
   {
     "vin": "5PVNJ7AN8R5T50840",
@@ -190,6 +205,36 @@
     "payoff": 75000
   },
   {
+    "vin": "5PVNJ7AP0S5T50709",
+    "year": 2025,
+    "make": "Hino",
+    "model": "",
+    "state": "Michigan",
+    "miles": "25257",
+    "leased": false,
+    "notes": "",
+    "monthly": 2287,
+    "weekly": 528,
+    "months": 60,
+    "payoff": 142000,
+    "balloon": 50000
+  },
+  {
+    "vin": "5PVNJ7AP1S5T50718",
+    "year": 2025,
+    "make": "Hino",
+    "model": "",
+    "state": "New Jersey",
+    "miles": "29415",
+    "leased": false,
+    "notes": "",
+    "monthly": 2341,
+    "weekly": 540,
+    "months": 60,
+    "payoff": 145000,
+    "balloon": 50000
+  },
+  {
     "vin": "5PVNJ7AP5R5T50327",
     "year": 2024,
     "make": "Hino",
@@ -204,6 +249,21 @@
     "payoff": 117000,
     "balloon": 25000,
     "coming": true
+  },
+  {
+    "vin": "5PVNJ7AP8R5T50287",
+    "year": 2024,
+    "make": "Hino",
+    "model": "",
+    "state": "Kansas",
+    "miles": "59662",
+    "leased": false,
+    "notes": "",
+    "monthly": 2161,
+    "weekly": 499,
+    "months": 60,
+    "payoff": 126000,
+    "balloon": 35000
   },
   {
     "vin": "5PVNJ7BT1R5T50093",
@@ -235,6 +295,21 @@
     "payoff": 147000,
     "balloon": 50000,
     "coming": true
+  },
+  {
+    "vin": "5PVNJ7BT2S5T50187",
+    "year": 2025,
+    "make": "Hino",
+    "model": "",
+    "state": "Alabama",
+    "miles": "145209",
+    "leased": false,
+    "notes": "",
+    "monthly": 2003,
+    "weekly": 462,
+    "months": 60,
+    "payoff": 112000,
+    "balloon": 25000
   },
   {
     "vin": "5PVNJ7BT6R5T50140",
@@ -291,10 +366,11 @@
     "miles": "160984",
     "leased": false,
     "notes": "",
-    "monthly": 2609,
-    "weekly": 602,
+    "monthly": 2145,
+    "weekly": 495,
     "months": 60,
-    "payoff": 126000
+    "payoff": 126000,
+    "balloon": 35000
   },
   {
     "vin": "1HTEUMML9SS229826",
@@ -328,21 +404,6 @@
     "balloon": 25000
   },
   {
-    "vin": "3HAEUMML0SL329062",
-    "year": 2025,
-    "make": "International",
-    "model": "",
-    "state": "New York",
-    "miles": "90913",
-    "leased": false,
-    "notes": "",
-    "monthly": 2395,
-    "weekly": 553,
-    "months": 60,
-    "payoff": 147000,
-    "balloon": 50000
-  },
-  {
     "vin": "3HAEUMML1PL562441",
     "year": 2023,
     "make": "International",
@@ -361,7 +422,7 @@
     "year": 2023,
     "make": "International",
     "model": "",
-    "state": "Minnesota",
+    "state": "St.Cloud, MN  ",
     "miles": "128835",
     "leased": false,
     "notes": "",
@@ -376,7 +437,7 @@
     "year": 2023,
     "make": "International",
     "model": "",
-    "state": "New York",
+    "state": "Bronx, NY",
     "miles": "237257",
     "leased": false,
     "notes": "",
@@ -433,7 +494,7 @@
     "year": 2023,
     "make": "International",
     "model": "",
-    "state": "Oregon",
+    "state": "Washington",
     "miles": "157961",
     "leased": false,
     "notes": "",
@@ -447,7 +508,7 @@
     "year": 2024,
     "make": "International",
     "model": "",
-    "state": "Oregon",
+    "state": "Washington",
     "miles": "130149",
     "leased": false,
     "notes": "",
@@ -502,21 +563,6 @@
     "balloon": 25000
   },
   {
-    "vin": "3HAEUMML9PL522320",
-    "year": 2023,
-    "make": "International",
-    "model": "",
-    "state": "Oregon",
-    "miles": "106698",
-    "leased": false,
-    "notes": "",
-    "monthly": 1887,
-    "weekly": 435,
-    "months": 60,
-    "payoff": 107000,
-    "balloon": 25000
-  },
-  {
     "vin": "3HAEUMML9RL718972",
     "year": 2024,
     "make": "International",
@@ -535,7 +581,7 @@
     "year": 2023,
     "make": "International",
     "model": "",
-    "state": "Mississippi",
+    "state": "Waynesboro, MS",
     "miles": "276888",
     "leased": false,
     "notes": "",
@@ -603,25 +649,11 @@
     "payoff": 76000
   },
   {
-    "vin": "2NKHLJ9X9MM456229",
-    "year": 2021,
-    "make": "Kenworth",
-    "model": "",
-    "state": "Arizona",
-    "miles": "202050",
-    "leased": false,
-    "notes": "",
-    "monthly": 830,
-    "weekly": 192,
-    "months": 60,
-    "payoff": 40000
-  },
-  {
     "vin": "1M2MDBAA4RS011816",
     "year": 2024,
     "make": "Mack",
     "model": "",
-    "state": "Albuquerque, NM",
+    "state": "Albuquerque, NM ",
     "miles": "130001",
     "leased": false,
     "notes": "",
@@ -659,20 +691,5 @@
     "months": 60,
     "payoff": 140000,
     "balloon": 50000
-  },
-  {
-    "vin": "1M2MDBAAXRS011836",
-    "year": 2024,
-    "make": "Mack",
-    "model": "",
-    "state": "California",
-    "miles": "130185",
-    "leased": false,
-    "notes": "",
-    "monthly": 1873,
-    "weekly": 432,
-    "months": 60,
-    "payoff": 106000,
-    "balloon": 25000
   }
 ]
