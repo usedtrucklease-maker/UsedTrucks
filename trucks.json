@@ -607,20 +607,6 @@
     "coming": true
   },
   {
-    "vin": "2NKHLJ9X6MM456205",
-    "year": 2021,
-    "make": "Kenworth",
-    "model": "",
-    "state": "Alabama",
-    "miles": "147475",
-    "leased": false,
-    "notes": "",
-    "monthly": 1246,
-    "weekly": 287,
-    "months": 60,
-    "payoff": 60000
-  },
-  {
     "vin": "2NKHLJ9X8MM456240",
     "year": 2021,
     "make": "Kenworth",
