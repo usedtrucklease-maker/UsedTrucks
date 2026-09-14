@@ -133,20 +133,6 @@
     "balloon": 25000
   },
   {
-    "vin": "5PVNJ7AN8P5T50236",
-    "year": 2023,
-    "make": "Hino",
-    "model": "",
-    "state": "Georgia",
-    "miles": "158113",
-    "leased": false,
-    "notes": "",
-    "monthly": 1938,
-    "weekly": 447,
-    "months": 60,
-    "payoff": 93000
-  },
-  {
     "vin": "5PVNJ7AN8R5T50840",
     "year": 2024,
     "make": "Hino",
@@ -675,21 +661,6 @@
     "weekly": 524,
     "months": 60,
     "payoff": 141000,
-    "balloon": 50000
-  },
-  {
-    "vin": "1M2MDBAA5RS014790",
-    "year": 2024,
-    "make": "Mack",
-    "model": "",
-    "state": "Texas",
-    "miles": "119247",
-    "leased": false,
-    "notes": "",
-    "monthly": 2244,
-    "weekly": 518,
-    "months": 60,
-    "payoff": 140000,
     "balloon": 50000
   }
 ]
