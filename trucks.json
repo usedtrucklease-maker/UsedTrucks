@@ -237,6 +237,21 @@
     "coming": true
   },
   {
+    "vin": "5PVNJ7AP7S5T50674",
+    "year": 2025,
+    "make": "Hino",
+    "model": "",
+    "state": "South Dakota",
+    "miles": "76637",
+    "leased": false,
+    "notes": "",
+    "monthly": 2904,
+    "weekly": 670,
+    "months": 60,
+    "payoff": 140000,
+    "coming": true
+  },
+  {
     "vin": "5PVNJ7AP8R5T50287",
     "year": 2024,
     "make": "Hino",
@@ -359,6 +374,21 @@
     "balloon": 35000
   },
   {
+    "vin": "1HTEUMML6SS781235",
+    "year": 2025,
+    "make": "International",
+    "model": "",
+    "state": "Kentucky",
+    "miles": "89602",
+    "leased": false,
+    "notes": "",
+    "monthly": 2848,
+    "weekly": 657,
+    "months": 60,
+    "payoff": 137000,
+    "coming": true
+  },
+  {
     "vin": "1HTEUMML9SS229826",
     "year": 2025,
     "make": "International",
@@ -388,6 +418,22 @@
     "months": 60,
     "payoff": 111000,
     "balloon": 25000
+  },
+  {
+    "vin": "3HAEUMML0PL560342",
+    "year": 2023,
+    "make": "International",
+    "model": "",
+    "state": "Georgia",
+    "miles": "98362",
+    "leased": false,
+    "notes": "",
+    "monthly": 2042,
+    "weekly": 471,
+    "months": 60,
+    "payoff": 105000,
+    "balloon": 10000,
+    "coming": true
   },
   {
     "vin": "3HAEUMML2PL514334",
@@ -448,6 +494,21 @@
     "payoff": 86000
   },
   {
+    "vin": "3HAEUMML5PL540474",
+    "year": 2023,
+    "make": "International",
+    "model": "",
+    "state": "Pennsylvania",
+    "miles": "159908",
+    "leased": false,
+    "notes": "",
+    "monthly": 1570,
+    "weekly": 362,
+    "months": 60,
+    "payoff": 76000,
+    "coming": true
+  },
+  {
     "vin": "3HAEUMML5PL567951",
     "year": 2023,
     "make": "International",
@@ -460,6 +521,21 @@
     "weekly": 442,
     "months": 60,
     "payoff": 92000
+  },
+  {
+    "vin": "3HAEUMML6PL567943",
+    "year": 2023,
+    "make": "International",
+    "model": "",
+    "state": "Texas",
+    "miles": "171272",
+    "leased": false,
+    "notes": "",
+    "monthly": 1851,
+    "weekly": 427,
+    "months": 60,
+    "payoff": 89000,
+    "coming": true
   },
   {
     "vin": "3HAEUMML6RL613788",
@@ -489,6 +565,21 @@
     "months": 60,
     "payoff": 123000,
     "balloon": 25000,
+    "coming": true
+  },
+  {
+    "vin": "3HAEUMML8PL523040",
+    "year": 2023,
+    "make": "International",
+    "model": "",
+    "state": "Kansas",
+    "miles": "78939",
+    "leased": false,
+    "notes": "",
+    "monthly": 2095,
+    "weekly": 484,
+    "months": 60,
+    "payoff": 101000,
     "coming": true
   },
   {
