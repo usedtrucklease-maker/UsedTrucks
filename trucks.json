@@ -390,20 +390,6 @@
     "balloon": 25000
   },
   {
-    "vin": "3HAEUMML1PL562441",
-    "year": 2023,
-    "make": "International",
-    "model": "",
-    "state": "Georgia",
-    "miles": "179943",
-    "leased": false,
-    "notes": "",
-    "monthly": 1903,
-    "weekly": 439,
-    "months": 60,
-    "payoff": 92000
-  },
-  {
     "vin": "3HAEUMML2PL514334",
     "year": 2023,
     "make": "International",
@@ -474,20 +460,6 @@
     "weekly": 442,
     "months": 60,
     "payoff": 92000
-  },
-  {
-    "vin": "3HAEUMML6PL529838",
-    "year": 2023,
-    "make": "International",
-    "model": "",
-    "state": "Washington",
-    "miles": "157961",
-    "leased": false,
-    "notes": "",
-    "monthly": 1945,
-    "weekly": 449,
-    "months": 60,
-    "payoff": 94000
   },
   {
     "vin": "3HAEUMML6RL613788",
@@ -575,20 +547,6 @@
     "weekly": 430,
     "months": 60,
     "payoff": 90000
-  },
-  {
-    "vin": "3HAEUMMLXPL528420",
-    "year": 2023,
-    "make": "International",
-    "model": "",
-    "state": "Colorado",
-    "miles": "210813",
-    "leased": false,
-    "notes": "",
-    "monthly": 1398,
-    "weekly": 323,
-    "months": 60,
-    "payoff": 67000
   },
   {
     "vin": "2NK3HM6X0SM387218",
