@@ -267,21 +267,6 @@
     "balloon": 35000
   },
   {
-    "vin": "5PVNJ7BT1R5T50093",
-    "year": 2024,
-    "make": "Hino",
-    "model": "",
-    "state": "New Mexico",
-    "miles": "149522",
-    "leased": false,
-    "notes": "",
-    "monthly": 2333,
-    "weekly": 538,
-    "months": 60,
-    "payoff": 135000,
-    "balloon": 35000
-  },
-  {
     "vin": "5PVNJ7BT2R5T50085",
     "year": 2024,
     "make": "Hino",
