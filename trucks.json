@@ -29,21 +29,6 @@
     "payoff": 94000
   },
   {
-    "vin": "5PVNJ7AN2P5T50457",
-    "year": 2023,
-    "make": "Hino",
-    "model": "",
-    "state": "Texas",
-    "miles": "97913",
-    "leased": false,
-    "notes": "",
-    "monthly": 1916,
-    "weekly": 442,
-    "months": 60,
-    "payoff": 108000,
-    "balloon": 25000
-  },
-  {
     "vin": "5PVNJ7AN3P5T50435",
     "year": 2023,
     "make": "Hino",
