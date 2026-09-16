@@ -267,6 +267,21 @@
     "balloon": 35000
   },
   {
+    "vin": "5PVNJ7AP8S5T50666",
+    "year": 2025,
+    "make": "Hino",
+    "model": "",
+    "state": "Florida",
+    "miles": "97843",
+    "leased": false,
+    "notes": "",
+    "monthly": 2308,
+    "weekly": 533,
+    "months": 60,
+    "payoff": 127000,
+    "balloon": 25000
+  },
+  {
     "vin": "5PVNJ7BT2R5T50085",
     "year": 2024,
     "make": "Hino",
@@ -281,21 +296,6 @@
     "payoff": 147000,
     "balloon": 50000,
     "coming": true
-  },
-  {
-    "vin": "5PVNJ7BT2S5T50187",
-    "year": 2025,
-    "make": "Hino",
-    "model": "",
-    "state": "Alabama",
-    "miles": "145209",
-    "leased": false,
-    "notes": "",
-    "monthly": 2003,
-    "weekly": 462,
-    "months": 60,
-    "payoff": 112000,
-    "balloon": 25000
   },
   {
     "vin": "5PVNJ7BT6R5T50140",
