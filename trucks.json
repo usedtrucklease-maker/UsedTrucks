@@ -344,21 +344,6 @@
     "coming": true
   },
   {
-    "vin": "1HTEUMML1SS111012",
-    "year": 2025,
-    "make": "International",
-    "model": "",
-    "state": "Illinois",
-    "miles": "59240",
-    "leased": false,
-    "notes": "",
-    "monthly": 2654,
-    "weekly": 613,
-    "months": 60,
-    "payoff": 128000,
-    "coming": true
-  },
-  {
     "vin": "1HTEUMML1SS172764",
     "year": 2025,
     "make": "International",
@@ -386,22 +371,6 @@
     "weekly": 657,
     "months": 60,
     "payoff": 137000,
-    "coming": true
-  },
-  {
-    "vin": "1HTEUMML9SS229826",
-    "year": 2025,
-    "make": "International",
-    "model": "",
-    "state": "Ohio",
-    "miles": "130206",
-    "leased": false,
-    "notes": "",
-    "monthly": 2214,
-    "weekly": 511,
-    "months": 60,
-    "payoff": 123000,
-    "balloon": 25000,
     "coming": true
   },
   {
