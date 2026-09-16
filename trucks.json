@@ -313,22 +313,6 @@
     "balloon": 25000
   },
   {
-    "vin": "1HTEUMML1PS528945",
-    "year": 2023,
-    "make": "International",
-    "model": "",
-    "state": "Missouri",
-    "miles": "120306",
-    "leased": false,
-    "notes": "",
-    "monthly": 2040,
-    "weekly": 471,
-    "months": 60,
-    "payoff": 114000,
-    "balloon": 25000,
-    "coming": true
-  },
-  {
     "vin": "1HTEUMML1SS172764",
     "year": 2025,
     "make": "International",
@@ -607,20 +591,6 @@
     "weekly": 362,
     "months": 60,
     "payoff": 76000
-  },
-  {
-    "vin": "1M2MDBAA4RS011816",
-    "year": 2024,
-    "make": "Mack",
-    "model": "",
-    "state": "Albuquerque, NM ",
-    "miles": "130001",
-    "leased": false,
-    "notes": "",
-    "monthly": 2690,
-    "weekly": 621,
-    "months": 60,
-    "payoff": 130000
   },
   {
     "vin": "1M2MDBAA4RS014781",
