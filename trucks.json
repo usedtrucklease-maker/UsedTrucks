@@ -134,20 +134,6 @@
     "coming": true
   },
   {
-    "vin": "5PVNJ7AN9P5T50469",
-    "year": 2023,
-    "make": "Hino",
-    "model": "",
-    "state": "Texas",
-    "miles": "122920",
-    "leased": false,
-    "notes": "",
-    "monthly": 1907,
-    "weekly": 440,
-    "months": 60,
-    "payoff": 99000
-  },
-  {
     "vin": "5PVNJ7ANXP5T50223",
     "year": 2023,
     "make": "Hino",
@@ -400,21 +386,6 @@
     "weekly": 413,
     "months": 60,
     "payoff": 86000
-  },
-  {
-    "vin": "3HAEUMML5PL540474",
-    "year": 2023,
-    "make": "International",
-    "model": "",
-    "state": "Pennsylvania",
-    "miles": "159908",
-    "leased": false,
-    "notes": "",
-    "monthly": 1570,
-    "weekly": 362,
-    "months": 60,
-    "payoff": 76000,
-    "coming": true
   },
   {
     "vin": "3HAEUMML5PL567951",
