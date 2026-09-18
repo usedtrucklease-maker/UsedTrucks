@@ -148,20 +148,6 @@
     "payoff": 87000
   },
   {
-    "vin": "5PVNJ7ANXP5T50237",
-    "year": 2023,
-    "make": "Hino",
-    "model": "",
-    "state": "Wisconsin",
-    "miles": "160598",
-    "leased": false,
-    "notes": "",
-    "monthly": 1564,
-    "weekly": 361,
-    "months": 60,
-    "payoff": 75000
-  },
-  {
     "vin": "5PVNJ7AP0S5T50709",
     "year": 2025,
     "make": "Hino",
@@ -251,6 +237,20 @@
     "months": 60,
     "payoff": 127000,
     "balloon": 25000
+  },
+  {
+    "vin": "5PVNJ7APXR5T50288",
+    "year": 2024,
+    "make": "Hino",
+    "model": "",
+    "state": "Delaware",
+    "miles": "134230",
+    "leased": false,
+    "notes": "",
+    "monthly": 1839,
+    "weekly": 424,
+    "months": 60,
+    "payoff": 89000
   },
   {
     "vin": "5PVNJ7BT2R5T50085",
