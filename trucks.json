@@ -1,20 +1,5 @@
 [
   {
-    "vin": "1FVACWFCXPHNX2838",
-    "year": 2023,
-    "make": "Freightliner",
-    "model": "",
-    "state": "Indiana",
-    "miles": "259359",
-    "leased": false,
-    "notes": "",
-    "monthly": 1938,
-    "weekly": 447,
-    "months": 60,
-    "payoff": 93000,
-    "coming": true
-  },
-  {
     "vin": "5PVNJ7AN1R5T50677",
     "year": 2024,
     "make": "Hino",
@@ -223,20 +208,6 @@
     "months": 60,
     "payoff": 127000,
     "balloon": 25000
-  },
-  {
-    "vin": "5PVNJ7APXR5T50288",
-    "year": 2024,
-    "make": "Hino",
-    "model": "",
-    "state": "Delaware",
-    "miles": "134230",
-    "leased": false,
-    "notes": "",
-    "monthly": 1839,
-    "weekly": 424,
-    "months": 60,
-    "payoff": 89000
   },
   {
     "vin": "5PVNJ7BT2R5T50085",
