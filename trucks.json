@@ -134,20 +134,6 @@
     "coming": true
   },
   {
-    "vin": "5PVNJ7ANXP5T50223",
-    "year": 2023,
-    "make": "Hino",
-    "model": "",
-    "state": "South Carolina",
-    "miles": "141323",
-    "leased": false,
-    "notes": "",
-    "monthly": 1804,
-    "weekly": 416,
-    "months": 60,
-    "payoff": 87000
-  },
-  {
     "vin": "5PVNJ7AP0S5T50709",
     "year": 2025,
     "make": "Hino",
