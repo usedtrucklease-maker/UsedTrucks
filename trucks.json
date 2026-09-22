@@ -348,7 +348,7 @@
     "year": 2024,
     "make": "International",
     "model": "",
-    "state": "Washington",
+    "state": "Burien, WA",
     "miles": "130149",
     "leased": false,
     "notes": "",
@@ -443,6 +443,20 @@
     "weekly": 431,
     "months": 60,
     "payoff": 90000
+  },
+  {
+    "vin": "3HAEUMMLXPL567427",
+    "year": 2023,
+    "make": "International",
+    "model": "",
+    "state": "Midway, FL",
+    "miles": "139483",
+    "leased": false,
+    "notes": "",
+    "monthly": 2176,
+    "weekly": 502,
+    "months": 60,
+    "payoff": 105000
   },
   {
     "vin": "2NK3HM6X0SM387218",
