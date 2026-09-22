@@ -197,21 +197,6 @@
     "coming": true
   },
   {
-    "vin": "5PVNJ7BT6R5T50140",
-    "year": 2024,
-    "make": "Hino",
-    "model": "",
-    "state": "New York ",
-    "miles": "233679",
-    "leased": false,
-    "notes": "",
-    "monthly": 1985,
-    "weekly": 458,
-    "months": 60,
-    "payoff": 112000,
-    "balloon": 25000
-  },
-  {
     "vin": "1HTEUMML6SS781235",
     "year": 2025,
     "make": "International",
