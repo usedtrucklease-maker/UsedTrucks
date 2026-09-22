@@ -14,21 +14,6 @@
     "payoff": 94000
   },
   {
-    "vin": "5PVNJ7AN3P5T50435",
-    "year": 2023,
-    "make": "Hino",
-    "model": "",
-    "state": "Maryland",
-    "miles": "63458",
-    "leased": false,
-    "notes": "",
-    "monthly": 2110,
-    "weekly": 487,
-    "months": 60,
-    "payoff": 102000,
-    "coming": true
-  },
-  {
     "vin": "5PVNJ7AN4R5T50852",
     "year": 2024,
     "make": "Hino",
