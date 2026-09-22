@@ -74,20 +74,6 @@
     "balloon": 25000
   },
   {
-    "vin": "5PVNJ7AN7P5T50244",
-    "year": 2023,
-    "make": "Hino",
-    "model": "",
-    "state": "California",
-    "miles": "127517",
-    "leased": false,
-    "notes": "",
-    "monthly": 1241,
-    "weekly": 286,
-    "months": 60,
-    "payoff": 60000
-  },
-  {
     "vin": "5PVNJ7AN7R5T50845",
     "year": 2024,
     "make": "Hino",
@@ -252,8 +238,7 @@
     "monthly": 2848,
     "weekly": 657,
     "months": 60,
-    "payoff": 137000,
-    "coming": true
+    "payoff": 137000
   },
   {
     "vin": "3HAEUMML0PL532850",
@@ -457,6 +442,20 @@
     "notes": "",
     "monthly": 1863,
     "weekly": 430,
+    "months": 60,
+    "payoff": 90000
+  },
+  {
+    "vin": "3HAEUMMLXPL541023",
+    "year": 2023,
+    "make": "International",
+    "model": "",
+    "state": "Alabama",
+    "miles": "196402",
+    "leased": false,
+    "notes": "",
+    "monthly": 1867,
+    "weekly": 431,
     "months": 60,
     "payoff": 90000
   },
