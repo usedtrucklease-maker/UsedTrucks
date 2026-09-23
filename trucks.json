@@ -205,10 +205,11 @@
     "miles": "89602",
     "leased": false,
     "notes": "",
-    "monthly": 2848,
-    "weekly": 657,
+    "monthly": 2185,
+    "weekly": 504,
     "months": 60,
-    "payoff": 137000
+    "payoff": 137000,
+    "balloon": 50000
   },
   {
     "vin": "3HAEUMML0PL532850",
