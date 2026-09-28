@@ -1,5 +1,19 @@
 [
   {
+    "vin": "1FVACWFC7PHUC8899",
+    "year": 2023,
+    "make": "Freightliner",
+    "model": "",
+    "state": "Massachusetts",
+    "miles": "138444",
+    "leased": false,
+    "notes": "",
+    "monthly": 2400,
+    "weekly": 554,
+    "months": 27,
+    "coming": true
+  },
+  {
     "vin": "5PVNJ7AN1R5T50677",
     "year": 2024,
     "make": "Hino",
@@ -44,6 +58,21 @@
     "balloon": 25000
   },
   {
+    "vin": "5PVNJ7AN5P5T50470",
+    "year": 2023,
+    "make": "Hino",
+    "model": "",
+    "state": "Maine",
+    "miles": "85700",
+    "leased": false,
+    "notes": "",
+    "monthly": 1949,
+    "weekly": 450,
+    "months": 60,
+    "payoff": 94000,
+    "coming": true
+  },
+  {
     "vin": "5PVNJ7AN5R5T50701",
     "year": 2024,
     "make": "Hino",
@@ -74,6 +103,21 @@
     "balloon": 25000
   },
   {
+    "vin": "5PVNJ7AN8P5T50222",
+    "year": 2023,
+    "make": "Hino",
+    "model": "",
+    "state": "Texas",
+    "miles": "159528",
+    "leased": false,
+    "notes": "",
+    "monthly": 1720,
+    "weekly": 397,
+    "months": 60,
+    "payoff": 83000,
+    "coming": true
+  },
+  {
     "vin": "5PVNJ7AN8R5T50840",
     "year": 2024,
     "make": "Hino",
@@ -86,7 +130,17 @@
     "weekly": 533,
     "months": 60,
     "payoff": 143000,
-    "balloon": 50000,
+    "balloon": 50000
+  },
+  {
+    "vin": "5PVNJ7AN9P5T50245",
+    "year": 2023,
+    "make": "Hino",
+    "model": "",
+    "state": "Pennsylvania",
+    "miles": "169918",
+    "leased": false,
+    "notes": "",
     "coming": true
   },
   {
@@ -105,6 +159,21 @@
     "balloon": 50000
   },
   {
+    "vin": "5PVNJ7AP0S5T50712",
+    "year": 2025,
+    "make": "Hino",
+    "model": "",
+    "state": "Michigan",
+    "miles": "39271",
+    "leased": false,
+    "notes": "",
+    "monthly": 2886,
+    "weekly": 666,
+    "months": 60,
+    "payoff": 139000,
+    "coming": true
+  },
+  {
     "vin": "5PVNJ7AP1S5T50718",
     "year": 2025,
     "make": "Hino",
@@ -118,6 +187,20 @@
     "months": 60,
     "payoff": 145000,
     "balloon": 50000
+  },
+  {
+    "vin": "5PVNJ7AP4R5T50285",
+    "year": 2024,
+    "make": "Hino",
+    "model": "",
+    "state": "Florida",
+    "miles": "60831",
+    "leased": false,
+    "notes": "",
+    "monthly": 2502,
+    "weekly": 577,
+    "months": 60,
+    "payoff": 121000
   },
   {
     "vin": "5PVNJ7AP5R5T50327",
@@ -141,7 +224,7 @@
     "make": "Hino",
     "model": "",
     "state": "South Dakota",
-    "miles": "76637",
+    "miles": "76640",
     "leased": false,
     "notes": "",
     "monthly": 2904,
@@ -193,7 +276,21 @@
     "weekly": 552,
     "months": 60,
     "payoff": 147000,
-    "balloon": 50000,
+    "balloon": 50000
+  },
+  {
+    "vin": "5PVNJ7BT3R5T50113",
+    "year": 2024,
+    "make": "Hino",
+    "model": "",
+    "state": "New York",
+    "miles": "129697",
+    "leased": false,
+    "notes": "",
+    "monthly": 2302,
+    "weekly": 531,
+    "months": 60,
+    "payoff": 111000,
     "coming": true
   },
   {
@@ -235,11 +332,10 @@
     "miles": "98362",
     "leased": false,
     "notes": "",
-    "monthly": 2042,
-    "weekly": 471,
+    "monthly": 2175,
+    "weekly": 502,
     "months": 60,
     "payoff": 105000,
-    "balloon": 10000,
     "coming": true
   },
   {
@@ -315,6 +411,21 @@
     "payoff": 92000
   },
   {
+    "vin": "3HAEUMML6PL533145",
+    "year": 2023,
+    "make": "International",
+    "model": "",
+    "state": "Gastonia, NC",
+    "miles": "112584",
+    "leased": false,
+    "notes": "",
+    "monthly": 2293,
+    "weekly": 529,
+    "months": 60,
+    "payoff": 110000,
+    "coming": true
+  },
+  {
     "vin": "3HAEUMML6PL567943",
     "year": 2023,
     "make": "International",
@@ -328,20 +439,6 @@
     "months": 60,
     "payoff": 89000,
     "coming": true
-  },
-  {
-    "vin": "3HAEUMML6RL613788",
-    "year": 2024,
-    "make": "International",
-    "model": "",
-    "state": "Burien, WA",
-    "miles": "130149",
-    "leased": false,
-    "notes": "",
-    "monthly": 2164,
-    "weekly": 499,
-    "months": 60,
-    "payoff": 104000
   },
   {
     "vin": "3HAEUMML6RL768910",
@@ -378,7 +475,7 @@
     "year": 2023,
     "make": "International",
     "model": "",
-    "state": "Utah",
+    "state": "Riverton, UT",
     "miles": "122508",
     "leased": false,
     "notes": "",
@@ -431,6 +528,20 @@
     "payoff": 90000
   },
   {
+    "vin": "3HAEUMMLXPL563572",
+    "year": 2023,
+    "make": "International",
+    "model": "",
+    "state": "Georgia ",
+    "miles": "105672",
+    "leased": false,
+    "notes": "",
+    "monthly": 2473,
+    "weekly": 571,
+    "months": 60,
+    "payoff": 119000
+  },
+  {
     "vin": "3HAEUMMLXPL567427",
     "year": 2023,
     "make": "International",
@@ -445,6 +556,21 @@
     "payoff": 105000
   },
   {
+    "vin": "3HAEUMMLXSL133467",
+    "year": 2025,
+    "make": "International",
+    "model": "",
+    "state": "Connecticut",
+    "miles": "109257",
+    "leased": false,
+    "notes": "",
+    "monthly": 2971,
+    "weekly": 686,
+    "months": 60,
+    "payoff": 143000,
+    "coming": true
+  },
+  {
     "vin": "2NK3HM6X0SM387218",
     "year": 2025,
     "make": "Kenworth",
@@ -457,7 +583,36 @@
     "weekly": 555,
     "months": 60,
     "payoff": 148000,
-    "balloon": 50000,
+    "balloon": 50000
+  },
+  {
+    "vin": "2NKHHM6X9NM135638",
+    "year": 2022,
+    "make": "Kenworth",
+    "model": "",
+    "state": "Connecticut",
+    "miles": "276448",
+    "leased": false,
+    "notes": "",
+    "monthly": 1140,
+    "weekly": 263,
+    "months": 60,
+    "payoff": 55000,
+    "coming": true
+  },
+  {
+    "vin": "2NKHLJ9X1MM456225",
+    "year": 2021,
+    "make": "Kenworth",
+    "model": "",
+    "state": "Indiana",
+    "miles": "197569",
+    "leased": false,
+    "notes": "",
+    "monthly": 830,
+    "weekly": 192,
+    "months": 60,
+    "payoff": 40000,
     "coming": true
   },
   {
