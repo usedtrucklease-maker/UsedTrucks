@@ -144,21 +144,6 @@
     "coming": true
   },
   {
-    "vin": "5PVNJ7AP0S5T50709",
-    "year": 2025,
-    "make": "Hino",
-    "model": "",
-    "state": "Michigan",
-    "miles": "25257",
-    "leased": false,
-    "notes": "",
-    "monthly": 2287,
-    "weekly": 528,
-    "months": 60,
-    "payoff": 142000,
-    "balloon": 50000
-  },
-  {
     "vin": "5PVNJ7AP0S5T50712",
     "year": 2025,
     "make": "Hino",
@@ -197,10 +182,11 @@
     "miles": "60831",
     "leased": false,
     "notes": "",
-    "monthly": 2502,
-    "weekly": 577,
+    "monthly": 2170,
+    "weekly": 501,
     "months": 60,
-    "payoff": 121000
+    "payoff": 121000,
+    "balloon": 25000
   },
   {
     "vin": "5PVNJ7AP5R5T50327",
@@ -486,20 +472,6 @@
     "balloon": 25000
   },
   {
-    "vin": "3HAEUMML9RL718972",
-    "year": 2024,
-    "make": "International",
-    "model": "",
-    "state": "Mississippi",
-    "miles": "221991",
-    "leased": false,
-    "notes": "",
-    "monthly": 1870,
-    "weekly": 432,
-    "months": 60,
-    "payoff": 90000
-  },
-  {
     "vin": "3HAEUMMLXPL527185",
     "year": 2023,
     "make": "International",
@@ -569,21 +541,6 @@
     "months": 60,
     "payoff": 143000,
     "coming": true
-  },
-  {
-    "vin": "2NK3HM6X0SM387218",
-    "year": 2025,
-    "make": "Kenworth",
-    "model": "",
-    "state": "Georgia",
-    "miles": "103949",
-    "leased": false,
-    "notes": "",
-    "monthly": 2404,
-    "weekly": 555,
-    "months": 60,
-    "payoff": 148000,
-    "balloon": 50000
   },
   {
     "vin": "2NKHHM6X9NM135638",
