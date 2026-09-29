@@ -265,6 +265,21 @@
     "coming": true
   },
   {
+    "vin": "5PVNJ7BT9S5T50185",
+    "year": 2025,
+    "make": "Hino",
+    "model": "",
+    "state": "North Carolina",
+    "miles": "65240",
+    "leased": false,
+    "notes": "",
+    "monthly": 2407,
+    "weekly": 556,
+    "months": 60,
+    "payoff": 148000,
+    "balloon": 50000
+  },
+  {
     "vin": "1HTEUMML6SS781235",
     "year": 2025,
     "make": "International",
