@@ -159,21 +159,6 @@
     "coming": true
   },
   {
-    "vin": "5PVNJ7AP1S5T50718",
-    "year": 2025,
-    "make": "Hino",
-    "model": "",
-    "state": "New Jersey",
-    "miles": "29415",
-    "leased": false,
-    "notes": "",
-    "monthly": 2341,
-    "weekly": 540,
-    "months": 60,
-    "payoff": 145000,
-    "balloon": 50000
-  },
-  {
     "vin": "5PVNJ7AP4R5T50285",
     "year": 2024,
     "make": "Hino",
@@ -293,21 +278,6 @@
     "months": 60,
     "payoff": 137000,
     "balloon": 50000
-  },
-  {
-    "vin": "3HAEUMML0PL532850",
-    "year": 2023,
-    "make": "International",
-    "model": "",
-    "state": "Illinois",
-    "miles": "141029",
-    "leased": false,
-    "notes": "",
-    "monthly": 1976,
-    "weekly": 456,
-    "months": 60,
-    "payoff": 111000,
-    "balloon": 25000
   },
   {
     "vin": "3HAEUMML0PL560342",
