@@ -539,7 +539,8 @@
     "monthly": 1569,
     "weekly": 362,
     "months": 60,
-    "payoff": 76000
+    "payoff": 76000,
+    "pending": true
   },
   {
     "vin": "1M2MDBAA4RS014781",
