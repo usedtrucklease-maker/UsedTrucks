@@ -88,21 +88,6 @@
     "balloon": 25000
   },
   {
-    "vin": "5PVNJ7AN7R5T50845",
-    "year": 2024,
-    "make": "Hino",
-    "model": "",
-    "state": "Pennsylvania",
-    "miles": "83479",
-    "leased": false,
-    "notes": "",
-    "monthly": 2005,
-    "weekly": 463,
-    "months": 60,
-    "payoff": 113000,
-    "balloon": 25000
-  },
-  {
     "vin": "5PVNJ7AN8P5T50222",
     "year": 2023,
     "make": "Hino",
@@ -521,9 +506,9 @@
     "miles": "276448",
     "leased": false,
     "notes": "",
-    "monthly": 1140,
-    "weekly": 263,
-    "months": 60,
+    "monthly": 1367,
+    "weekly": 315,
+    "months": 48,
     "payoff": 55000,
     "coming": true
   },
