@@ -498,21 +498,6 @@
     "coming": true
   },
   {
-    "vin": "2NKHHM6X9NM135638",
-    "year": 2022,
-    "make": "Kenworth",
-    "model": "",
-    "state": "Connecticut",
-    "miles": "276448",
-    "leased": false,
-    "notes": "",
-    "monthly": 1367,
-    "weekly": 315,
-    "months": 48,
-    "payoff": 55000,
-    "coming": true
-  },
-  {
     "vin": "2NKHLJ9X1MM456225",
     "year": 2021,
     "make": "Kenworth",
