@@ -144,21 +144,6 @@
     "coming": true
   },
   {
-    "vin": "5PVNJ7AP4R5T50285",
-    "year": 2024,
-    "make": "Hino",
-    "model": "",
-    "state": "Florida",
-    "miles": "60831",
-    "leased": false,
-    "notes": "",
-    "monthly": 2170,
-    "weekly": 501,
-    "months": 60,
-    "payoff": 121000,
-    "balloon": 25000
-  },
-  {
     "vin": "5PVNJ7AP5R5T50327",
     "year": 2024,
     "make": "Hino",
